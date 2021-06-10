@@ -1,0 +1,29 @@
+.top__section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 10px 0;
+  .right__sub--section {
+    display: flex;
+    align-items: center;
+    column-gap: 65px;
+    font-weight: 600;
+    list-style: none;
+    a {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold;
+      color: #7250ba;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    .company-logo {
+      width: 145px;
+    }
+  }
+  svg {
+    margin-right: 5px;
+  }
+}
