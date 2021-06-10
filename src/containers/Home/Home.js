@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    "& .MuiGrid-root": {
-      // padding: 0,
+    "& .MuiGrid-container": {
+      // alignItems: "center",
     },
   },
   container: {
@@ -98,9 +98,9 @@ function Home() {
         </p>
         <Grid container spacing={0} className="text-center">
           <Grid item xs={6}>
-            hi
+            <img src="/banner/product-preview.png" alt="product" />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={6} className="d-flex align-items-center">
             <div className="right__section text-center">
               <div className="dse__info">
                 A Diamond Standard Coin. The world's first and only
@@ -110,6 +110,39 @@ function Home() {
                 HOW WE BUY DIAMONDS
               </Link>
             </div>
+          </Grid>
+        </Grid>
+      </div>
+      <div className="bottom__section">
+        <h3>SIMPLE SYSTEM & PROMPT PAYMENTS</h3>
+        <Grid container spacing={0}>
+          <Grid item xs={6} className="bottom__left__section">
+            <p>
+              We buy large volumes of graded and ungraded natural diamonds from
+              established global vendors using an automated price discovery
+              process.{" "}
+            </p>
+            <strong>Three Step Process for Vendors</strong>
+            <ol>
+              <li>Upload diamond list with offers</li>
+              <li>Get an instant purchase order</li>
+              <li>Deliver to local IGI gem lab</li>
+            </ol>
+            <span>
+              Our computer only selects the diamonds with the best prices.
+            </span>
+            <ul>
+              <li>We pay quickly.</li>
+              <li>We do not negotiate.</li>
+              <li>We never reject or return a diamond.</li>
+            </ul>
+            <strong>To sell to us, simply offer us your best prices.</strong>
+            <Link to={`/how-to-buy`} replace>
+              Learn more about how we buy diamonds.
+            </Link>
+          </Grid>
+          <Grid item xs={6} className="bottom__right__section">
+            <img src="/banner/admin-screenshot.png" alt="screenshot" />
           </Grid>
         </Grid>
       </div>

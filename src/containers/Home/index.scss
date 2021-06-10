@@ -76,4 +76,33 @@
       }
     }
   }
+  .bottom__section {
+    padding: 15px;
+    margin-top: 30px;
+    h3 {
+      font-weight: 700;
+      color: #7250ba;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .bottom__left__section {
+      padding: 0 25px;
+      ol,
+      ul {
+        padding-left: 20px;
+      }
+      a {
+        display: block;
+        margin-top: 10px;
+        text-decoration: underline;
+        color: #000;
+      }
+    }
+    .bottom__right__section {
+      img {
+        width: 100%;
+        box-shadow: 0px 0px 7px 1px #444;
+      }
+    }
+  }
 }
