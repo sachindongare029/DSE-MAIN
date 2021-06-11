@@ -1,0 +1,59 @@
+.dse__how-to {
+  .how__to__page__container {
+    .banner__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 470px;
+      width: 100%;
+      z-index: -1;
+    }
+    .page__body {
+      background-color: #fff;
+      padding: 15px 0;
+      .top__section {
+        padding: 0 60px;
+        .guide {
+          border-top: 2px solid #6b6b6b;
+          border-bottom: 2px solid #6b6b6b;
+          .btn__heading {
+            display: flex;
+            align-items: center;
+            padding: 25px 60px;
+            margin: auto;
+            button {
+              width: 30%;
+              border: 0;
+              background-color: #7250ba;
+              border-radius: 7px;
+              padding: 15px;
+              color: #fff;
+              line-height: 18px;
+              .main__text {
+                text-transform: uppercase;
+                font-weight: 700;
+              }
+              .sub__text {
+                display: block;
+              }
+            }
+            h4 {
+              font-weight: 700;
+              color: #7253c1;
+              margin-left: 40px;
+              margin-bottom: 0;
+            }
+          }
+        }
+        .info__section {
+          h2 {
+            margin: 25px 0;
+            color: #7250ba;
+            text-align: center;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

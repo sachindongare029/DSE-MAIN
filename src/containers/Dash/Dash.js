@@ -6,7 +6,7 @@ import PrivateRoute from "../../utils/PrivateRoute";
 
 function Dash() {
   return (
-    <div className="container">
+    <React.Fragment>
       <div>
         <HashRouter>
           <Switch>
@@ -22,7 +22,7 @@ function Dash() {
           </Switch>
         </HashRouter>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
 
