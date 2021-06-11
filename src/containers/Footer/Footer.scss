@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  padding: 20px 0;
+  padding: 0 0 20px 0;
   .footer__container {
     border: 1px solid #000;
     .footer__left__section {
@@ -21,5 +21,8 @@ footer {
   }
   .company__logo {
     width: 145px;
+  }
+  .privacy__footer {
+    font-size: 12px;
   }
 }

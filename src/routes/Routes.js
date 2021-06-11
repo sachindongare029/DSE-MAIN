@@ -1,12 +1,15 @@
 import React, { Suspense } from "react";
-import { Switch, Redirect, HashRouter } from "react-router-dom";
+import { Switch, Redirect, HashRouter, useLocation } from "react-router-dom";
 import * as LazyComponent from "../utils/LazyLoaded";
 import Loader from "../components/Loader/Loader";
 import PrivateRoute from "../utils/PrivateRoute";
 import Header from "../containers/Header";
 import Footer from "../containers/Footer/Footer";
+import SubFooter from "../containers/SubFooter/index";
 
 const Routes = () => {
+  var location = useLocation();
+  var isHome = location.pathname === "/home" ? true : false;
   return (
     <Suspense fallback={<Loader />}>
       <HashRouter>
@@ -16,6 +19,7 @@ const Routes = () => {
           <PrivateRoute component={LazyComponent.Dash} path="/" />
           <Redirect to="/404" />
         </Switch>
+        {isHome && <SubFooter />}
         <Footer />
       </HashRouter>
     </Suspense>

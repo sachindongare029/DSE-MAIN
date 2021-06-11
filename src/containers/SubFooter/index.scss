@@ -1,0 +1,31 @@
+.sub__footer {
+  width: 100%;
+  margin-top: 40px;
+  .footer__container {
+    border-top: 1px solid #000;
+    .register--btn {
+      background-color: #7250ba;
+      border-radius: 8px;
+      color: #fff;
+      width: 70%;
+      .main__text {
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      .sub__text {
+        display: block;
+      }
+    }
+    .purchase__date {
+      color: #7250ba;
+      .date__label {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .date__value {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+  }
+}

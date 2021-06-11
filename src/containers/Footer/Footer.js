@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
       borderRight: 0,
       borderLeft: 0,
       padding: "0 30px",
-      // alignItems: "center",
     },
   },
   container: {
@@ -30,11 +29,13 @@ export default function Footer() {
       <div className={`container ${classes.root}`}>
         <Grid container className="footer__container" spacing={3}>
           <Grid item xs={4} className="footer__left__section">
-            <img
-              className="company__logo"
-              src="/logo/DSELogo.png"
-              alt="company-logo"
-            />
+            <Link to="/" replace>
+              <img
+                className="company__logo"
+                src="/logo/DSELogo.png"
+                alt="company-logo"
+              />
+            </Link>
           </Grid>
           <Grid item xs={8}>
             <Grid container spacing={3}>
@@ -70,6 +71,10 @@ export default function Footer() {
             </Grid>
           </Grid>
         </Grid>
+        <div className="d-flex justify-content-between mt-2 privacy__footer">
+          <span>&#169; 2021 Diamond Standard Exchange Ltd.</span>
+          <span>Privacy Policy</span>
+        </div>
       </div>
     </footer>
   );
