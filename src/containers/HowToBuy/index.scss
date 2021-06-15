@@ -4,15 +4,16 @@
       position: absolute;
       top: 0;
       left: 0;
-      height: 470px;
+      height: auto;
       width: 100%;
       z-index: -1;
     }
     .page__body {
       background-color: #fff;
-      padding: 15px 0;
+      padding: 20px 0;
       .top__section {
-        padding: 0 60px;
+        padding: 0 60px 50px 60px;
+        border-bottom: 2px solid #909090;
         .guide {
           border-top: 2px solid #6b6b6b;
           border-bottom: 2px solid #6b6b6b;
@@ -52,7 +53,125 @@
             text-align: center;
             font-weight: 700;
           }
+          .left__section {
+            h5 {
+              font-weight: 700;
+              margin-bottom: 1rem;
+            }
+            p {
+              font-size: 14px;
+              text-align: justify;
+              color: #000;
+              margin-bottom: 2rem;
+            }
+            .buy__steps {
+              color: #fff;
+              .first__step,
+              .second__step,
+              .third__step {
+                display: flex;
+                align-items: center;
+                height: 65px;
+                .step__count {
+                  width: 15%;
+                  height: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 32px;
+                  font-weight: 700;
+                  text-align: center;
+                  font-family: monospace;
+                }
+                .step {
+                  padding: 10px;
+                  width: 85%;
+                  font-size: 14px;
+                }
+              }
+              .first__step {
+                background-color: #b79ddc;
+                border-bottom: 1px solid #7251bb;
+                .step__count {
+                  border-right: 1px solid #7251bb;
+                }
+              }
+              .second__step {
+                background-color: #946dcb;
+                .step__count {
+                  border-right: 1px solid #7251bb;
+                }
+              }
+              .third__step {
+                background-color: #7251bb;
+              }
+            }
+          }
+          .right__section {
+            padding-left: 20px;
+            position: relative;
+            .world__map {
+              width: 100%;
+            }
+            .loupe__img {
+              position: absolute;
+              top: 206px;
+              right: 0;
+              width: 214px;
+              filter: drop-shadow(rgba(0, 0, 0, 0.6) -3px 29px 11px);
+              clip-path: inset(0 0px -50px -28px);
+            }
+          }
+          .what__buy {
+            width: 50%;
+            margin-top: 30px;
+            h5 {
+              font-weight: 700;
+              margin-bottom: 1rem;
+            }
+            p {
+              font-size: 14px;
+              color: #000;
+            }
+          }
+          .diamond__range {
+            margin-top: 2rem;
+            h6 {
+              font-size: 14px;
+              color: #000;
+              font-weight: 700;
+              margin-bottom: 0.2rem;
+            }
+            .left__section {
+              table {
+                width: 70%;
+              }
+            }
+            .right__section {
+              table {
+                width: 95%;
+              }
+            }
+            .left__section,
+            .right__section {
+              table {
+                margin: 0 auto;
+                td {
+                  border: 1px solid #7b7b7b;
+                  min-width: 60px;
+                  max-width: 60px;
+                  padding: 5px;
+                  font-weight: 700;
+                  font-size: 12px;
+                  height: 50px;
+                }
+              }
+            }
+          }
         }
+      }
+      .middle__section {
+        padding: 40px 60px;
       }
     }
   }

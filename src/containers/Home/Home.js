@@ -100,7 +100,7 @@ function Home() {
           </p>
           <Grid container spacing={0} className="text-center">
             <Grid item xs={6}>
-              <img src="/banner/product-preview.png" alt="product" />
+              <img src="/Images/diamonds.png" alt="product" />
             </Grid>
             <Grid item xs={6} className="d-flex align-items-center">
               <div className="right__section text-center">
