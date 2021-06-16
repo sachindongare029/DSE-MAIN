@@ -10,6 +10,7 @@ import SubFooter from "../containers/SubFooter/index";
 const Routes = () => {
   var location = useLocation();
   var isHome = location.pathname === "/home" ? true : false;
+  var isHow = location.pathname === "/how-to-buy" ? true : false;
   return (
     <Suspense fallback={<Loader />}>
       <HashRouter>
@@ -19,7 +20,7 @@ const Routes = () => {
           <PrivateRoute component={LazyComponent.Dash} path="/" />
           <Redirect to="/404" />
         </Switch>
-        {isHome && <SubFooter />}
+        {(isHome || isHow) && <SubFooter />}
         <Footer />
       </HashRouter>
     </Suspense>

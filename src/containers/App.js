@@ -1,6 +1,5 @@
 import React from "react";
 import { HashRouter } from "react-router-dom";
-import history from "../routes/History";
 import Routes from "../routes/Routes";
 import { IntlProvider } from "react-intl";
 import messages from "../assets/Local/messages";

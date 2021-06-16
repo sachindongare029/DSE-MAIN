@@ -176,20 +176,151 @@ function HowToBuy() {
             </div>
           </section>
           <section className="middle__section">
-            <Grid container spacing={10}>
+            <Grid container spacing={10} className="dse__features">
               <Grid item xs={6} className="text-center left__section">
-                Hii
+                <div className="image__section">
+                  <img src="/Images/desktop.jpg" alt="desktop" />
+                </div>
+                <div className="info__section">
+                  <h5>We Buy or Bid Automatically</h5>
+                  <p className="text-justify">
+                    Upload diamonds, with a price of immediate, COD delivery.
+                    Some diamonds we buy at your price, and for others, we make
+                    a bid. We buy statistical samples of all diamonds, and our
+                    system automatically adjusts our bids. If you accept our
+                    bid, we instantly sent you a purchase order. We always pay
+                    COD after GIA confirmation.
+                  </p>
+                </div>
               </Grid>
               <Grid item xs={6} className="text-center right__section">
-                Hello
+                <div className="image__section">
+                  <img src="/Images/scooter.jpg" alt="scooter" />
+                </div>
+                <div className="info__section">
+                  <h5>You Deliver Locally</h5>
+                  <p className="text-justify">
+                    You deliver the diamonds to your GIA Lab by the end of the
+                    next business day. They inspect diamonds for us, to confirm
+                    that they match the GIA Report. At prices under $750/ct, we
+                    buy ungraded diamonds, based on your assertion of your
+                    quality, and the IGI grades them for us. We pay more for
+                    graded diamonds, and ones already in the USA.
+                  </p>
+                </div>
               </Grid>
               <Grid item xs={6} className="text-center left__section">
-                Hii
+                <div className="image__section">
+                  <img src="/Images/cash.jpg" alt="cash" />
+                </div>
+                <div className="info__section">
+                  <h5>COD, No Returns</h5>
+                  <p className="text-justify m-0">
+                    Once the IGI confirms your diamonds, we pay in full by bank
+                    wire. For uncertified diamonds, we pay after grading. Your
+                    diamonds must match the quality you asserted.
+                  </p>
+                  <p className="text-justify">
+                    We buy diamonds based on the GIA grading report and the
+                    price, and never reject a diamond that matches the cert.
+                  </p>
+                </div>
               </Grid>
               <Grid item xs={6} className="text-center right__section">
-                Hello
+                <div className="image__section">
+                  <img src="/Images/yoga.jpg" alt="yoga" />
+                </div>
+                <div className="info__section">
+                  <h3>NO NEGOTIATING</h3>
+                  <p className="text-justify">
+                    We buy thousands of diamonds from hundreds of vendors daily,
+                    based strictly on their GIA grades and price. We
+                    automatically adjust our prices, and don't negotiate
+                    individual purchases. Throughout the day, as we need a
+                    smaller number of specific diamonds. we are more likely to
+                    accept your asking price. Our market making system
+                    automatically raises our bids to fulfill our statistical
+                    sampling requirements. If you hold out, we will likely pay
+                    more, but then again, another vendor might offer similar
+                    stones and we won't need yours.
+                  </p>
+                </div>
               </Grid>
             </Grid>
+            <div className="dse__features__chart">
+              <span>
+                We buy statistical samples of all diamonds from established
+                vendors, for a regulated commodity using an audited price
+                discovery process.
+              </span>
+              <div className="chart__container">
+                <div className="chart__top__section">
+                  <div className="chart__count">
+                    <span>1</span>
+                  </div>
+                  <div className="info__section">
+                    <span>
+                      Upload a private list of diamonds with your best COD
+                      price.
+                    </span>
+                    <ul>
+                      <li>For next day delivery to your IGI Lab ONLY.</li>
+                      <li>
+                        Round, 0.21 to 0.75 (soon 1.99) carats, D-L, FL-SI2,
+                        EX-VG Cut.
+                      </li>
+                      <li>
+                        Diamonds above $750/ct must already be GIA Graded.
+                      </li>
+                      <li>Your lists are confidential, and so are our bids.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="chart__middle__section">
+                  <div className="chart__count">
+                    <span>2</span>
+                  </div>
+                  <div className="info__section">
+                    <span>
+                      We instantly buy or bid on some, or all, of your diamonds.
+                    </span>
+                    <ul>
+                      <li>
+                        We may accept your asking price, or make an instant cash
+                        bid.
+                      </li>
+                      <li>
+                        The commodity is not jewelry, we need all types of
+                        diamonds.
+                      </li>
+                      <li>
+                        Inclusions welcome, printed GIA paperwork not required.
+                      </li>
+                      <li>
+                        Bids change frequently as we fill our commodity orders
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="chart__bottom__section">
+                  <div className="chart__count">
+                    <span>3</span>
+                  </div>
+                  <div className="info__section">
+                    <span>Accept or Reject our Offer.</span>
+                    <ul>
+                      <li>Our system generates an instant purchase order.</li>
+                      <li>
+                        Deliver to your local IGI Lab – they verify that the
+                        diamonds match the certs, or grade ungraded diamonds for
+                        us.
+                      </li>
+                      <li>We pay COD, and never return a matching diamond.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
       </div>

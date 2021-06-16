@@ -10,7 +10,7 @@
     }
     .page__body {
       background-color: #fff;
-      padding: 20px 0;
+      padding-top: 20px;
       .top__section {
         padding: 0 60px 50px 60px;
         border-bottom: 2px solid #909090;
@@ -171,7 +171,67 @@
         }
       }
       .middle__section {
-        padding: 40px 60px;
+        padding: 40px 60px 0;
+        .dse__features {
+          .image__section {
+            width: 300px;
+            height: 170px;
+            margin: 0 auto;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .info__section {
+            h5,
+            h3 {
+              font-weight: 700;
+              margin: 1.5rem 0;
+            }
+            h3 {
+              margin: 1.2rem 0;
+            }
+          }
+        }
+        .dse__features__chart {
+          margin-top: 2rem;
+          .chart__container {
+            margin-top: 2rem;
+            color: #fff;
+            .chart__top__section,
+            .chart__middle__section,
+            .chart__bottom__section {
+              display: flex;
+              align-items: flex-start;
+              height: 160px;
+              .chart__count {
+                width: 10%;
+                height: 100%;
+                padding: 10px 15px;
+                display: flex;
+                align-items: flex-start;
+                font-size: 36px;
+                font-weight: 700;
+                text-align: center;
+                font-family: monospace;
+              }
+              .info__section {
+                padding: 10px;
+                width: 90%;
+                font-size: 16px;
+              }
+            }
+            .chart__top__section {
+              background-color: #b79ddc;
+            }
+            .chart__middle__section {
+              background-color: #946dcb;
+            }
+            .chart__bottom__section {
+              background-color: #7251bb;
+            }
+          }
+        }
       }
     }
   }
