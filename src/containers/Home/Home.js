@@ -117,7 +117,7 @@ function Home() {
         </div>
         <div className="bottom__section">
           <h3>SIMPLE SYSTEM & PROMPT PAYMENTS</h3>
-          <Grid container spacing={0}>
+          <Grid container spacing={10}>
             <Grid item xs={6} className="bottom__left__section">
               <p>
                 We buy large volumes of graded and ungraded natural diamonds
