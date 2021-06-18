@@ -92,7 +92,9 @@ export default function About() {
                     <p className="text-left m-0">
                       Learn more at{" "}
                       <strong>
-                        <a href="https://thedse.co/">DiamondStandard.co</a>
+                        <a href="https://diamondstandard.co/">
+                          DiamondStandard.co
+                        </a>
                       </strong>
                     </p>
                   </div>

@@ -2,8 +2,11 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import "./index.scss";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import moment from "moment";
+import "moment-timezone";
+import "./index.scss";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,6 +31,70 @@ const useStyles = makeStyles((theme) => ({
 
 function Home() {
   const classes = useStyles();
+  const Announcement = useSelector((state) => state.Announcement);
+  // console.log(Announcement);
+
+  const renderAnnouncement = () => {
+    let buyingAnn = Announcement.buying_announcement;
+    let generalAnn = Announcement.general_anouncement;
+    let annDate;
+    if (buyingAnn && generalAnn) {
+      if (buyingAnn && buyingAnn.setting_value && buyingAnn.setting_details) {
+        annDate = new Date(buyingAnn.setting_details);
+      }
+      if (
+        buyingAnn.setting_value &&
+        generalAnn.setting_value &&
+        buyingAnn.setting_details
+      ) {
+        return (
+          <div className="vendors__notice__block">
+            <h2>Diamond Standard Exchange (DSE) for registered vendors</h2>
+            <div className="date__block notice__next__purchase">
+              <div className="date__label">Next Purchase:</div>
+              <div className="date__value">{`${moment(annDate).format(
+                "LL"
+              )} at ${moment(annDate)
+                .tz("America/New_York")
+                .format("ha z")}`}</div>
+            </div>
+            <div className="date__block notice__inv__due">
+              <div className="date__label">Inventory Deadline:</div>
+              <div className="date__value">{generalAnn.setting_details}</div>
+            </div>
+          </div>
+        );
+      } else {
+        if (buyingAnn.setting_value && buyingAnn.setting_details) {
+          return (
+            <div className="vendors__notice__block">
+              <h2>Diamond Standard Exchange (DSE) for registered vendors</h2>
+              <div className="date__block notice__next__purchase">
+                <div className="date__label">Next Purchase:</div>
+                <div className="date__value">{`${moment(annDate).format(
+                  "LL"
+                )} at ${moment(annDate)
+                  .tz("America/New_York")
+                  .format("ha z")}`}</div>
+              </div>
+            </div>
+          );
+        } else if (generalAnn.setting_value && generalAnn.setting_details) {
+          return (
+            <div className="vendors__notice__block">
+              <h2>Diamond Standard Exchange (DSE) for registered vendors</h2>
+              <div className="date__block notice__inv__due">
+                <div className="date__label">Inventory Deadline:</div>
+                <div className="date__value">{generalAnn.setting_details}</div>
+              </div>
+            </div>
+          );
+        } else {
+          return;
+        }
+      }
+    }
+  };
 
   return (
     <div className="dse__home">
@@ -40,17 +107,7 @@ function Home() {
         <Paper className={classes.paper}>
           <Grid container spacing={0}>
             <Grid item xs={12} className="text-center">
-              <div className="vendors__notice__block">
-                <h2>Diamond Standard Exchange (DSE) for registered vendors</h2>
-                <div className="date__block notice__next__purchase">
-                  <div className="date__label">Next Purchase:</div>
-                  <div className="date__value">June 21, 2021 at 7am EST</div>
-                </div>
-                <div className="date__block notice__inv__due">
-                  <div className="date__label">Inventory Deadline:</div>
-                  <div className="date__value">June 21, 2021 at 6am EST</div>
-                </div>
-              </div>
+              {renderAnnouncement()}
               <div className="actions__block">
                 <Grid container spacing={0}>
                   <Grid item xs={6}>

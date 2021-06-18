@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter } from "react-router-dom";
+import { bindActionCreators } from "redux";
 import Routes from "../routes/Routes";
 import { IntlProvider } from "react-intl";
 import messages from "../assets/Local/messages";
@@ -8,8 +9,16 @@ import Loader from "../components/Loader/Loader";
 import "./App.scss";
 import { connect } from "react-redux";
 import { setCurrentLang } from "../store/Lang/LangAction";
+import { setAnnouncement } from "../store/Announcement/AnnouncementAction";
+import { axiosInstance } from "../network/apis/index";
 
 class App extends React.Component {
+  componentDidMount() {
+    axiosInstance
+      .get("/getSettingDetails")
+      .then((res) => this.props.setAnnouncement(res.data.setting))
+      .catch((error) => console.log("error ", error));
+  }
   render() {
     const { lang, loading } = this.props;
     return (
@@ -33,5 +42,7 @@ const mapStateToProps = ({ lang, loading }) => ({
   lang,
   loading,
 });
+const mapDespatchToProps = (dispatch) =>
+  bindActionCreators({ setCurrentLang, setAnnouncement }, dispatch);
 
-export default connect(mapStateToProps, { setCurrentLang })(App);
+export default connect(mapStateToProps, mapDespatchToProps)(App);
