@@ -4,8 +4,8 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import moment from "moment";
-import "moment-timezone";
+// import moment from "moment";
+// import "moment-timezone";
 import "./index.scss";
 
 const useStyles = makeStyles((theme) => ({
@@ -35,64 +35,32 @@ function Home() {
   // console.log(Announcement);
 
   const renderAnnouncement = () => {
-    let buyingAnn = Announcement.buying_announcement;
-    let generalAnn = Announcement.general_anouncement;
-    let annDate;
-    if (buyingAnn && generalAnn) {
-      if (buyingAnn && buyingAnn.setting_value && buyingAnn.setting_details) {
-        annDate = new Date(buyingAnn.setting_details);
-      }
-      if (
-        buyingAnn.setting_value &&
-        generalAnn.setting_value &&
-        buyingAnn.setting_details
-      ) {
-        return (
-          <div className="vendors__notice__block">
-            <h2>Diamond Standard Exchange (DSE) for registered vendors</h2>
-            <div className="date__block notice__next__purchase">
+    // let buyingAnn = Announcement.buying_announcement;
+    let generalAnn = Announcement.site_general_announcement;
+    // let annDate;
+    if (generalAnn) {
+      // if (buyingAnn && buyingAnn.setting_value && buyingAnn.setting_details) {
+      //   annDate = new Date(buyingAnn.setting_details);
+      // }
+      return (
+        <div className="vendors__notice__block">
+          <h2>Diamond Standard Exchange (DSE) for registered vendors</h2>
+          {/* <div className="date__block notice__next__purchase">
               <div className="date__label">Next Purchase:</div>
               <div className="date__value">{`${moment(annDate).format(
                 "LL"
               )} at ${moment(annDate)
                 .tz("America/New_York")
                 .format("ha z")}`}</div>
-            </div>
-            <div className="date__block notice__inv__due">
-              <div className="date__label">Inventory Deadline:</div>
-              <div className="date__value">{generalAnn.setting_details}</div>
-            </div>
+            </div> */}
+          <div className="date__block notice__inv__due">
+            <div className="date__label">{generalAnn.title}</div>
+            <div className="date__value">{generalAnn.setting_details}</div>
           </div>
-        );
-      } else {
-        if (buyingAnn.setting_value && buyingAnn.setting_details) {
-          return (
-            <div className="vendors__notice__block">
-              <h2>Diamond Standard Exchange (DSE) for registered vendors</h2>
-              <div className="date__block notice__next__purchase">
-                <div className="date__label">Next Purchase:</div>
-                <div className="date__value">{`${moment(annDate).format(
-                  "LL"
-                )} at ${moment(annDate)
-                  .tz("America/New_York")
-                  .format("ha z")}`}</div>
-              </div>
-            </div>
-          );
-        } else if (generalAnn.setting_value && generalAnn.setting_details) {
-          return (
-            <div className="vendors__notice__block">
-              <h2>Diamond Standard Exchange (DSE) for registered vendors</h2>
-              <div className="date__block notice__inv__due">
-                <div className="date__label">Inventory Deadline:</div>
-                <div className="date__value">{generalAnn.setting_details}</div>
-              </div>
-            </div>
-          );
-        } else {
-          return;
-        }
-      }
+        </div>
+      );
+    } else {
+      return;
     }
   };
 

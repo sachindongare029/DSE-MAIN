@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import { useSelector } from "react-redux";
-import moment from "moment";
-import "moment-timezone";
+// import { useSelector } from "react-redux";
+// import moment from "moment";
+// import "moment-timezone";
 import "./index.scss";
 
 const useStyles = makeStyles((theme) => ({
@@ -34,8 +34,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SubFooter() {
-  const Announcement = useSelector((state) => state.Announcement);
-  var buyingAnn = Announcement.buying_announcement;
+  // const Announcement = useSelector((state) => state.Announcement);
+  // var buyingAnn = Announcement.buying_announcement;
   const classes = useStyles();
 
   const renderRegister = () => {
@@ -52,27 +52,9 @@ export default function SubFooter() {
       <div className={`container ${classes.root} footer__container`}>
         <Paper className={classes.paper}>
           <Grid container spacing={5}>
-            {buyingAnn && buyingAnn.setting_value ? (
-              <Fragment>
-                <Grid item xs={6} className="text-right">
-                  {renderRegister()}
-                </Grid>
-                <Grid item xs={6} className="text-left purchase__date">
-                  <div className="date__label">Next Purchase:</div>
-                  <div className="date__value">
-                    {`${moment(new Date(buyingAnn.setting_details)).format(
-                      "LL"
-                    )} at ${moment(new Date(buyingAnn.setting_details))
-                      .tz("America/New_York")
-                      .format("ha z")}`}
-                  </div>
-                </Grid>
-              </Fragment>
-            ) : (
-              <Grid item xs={12} className="text-center">
-                {renderRegister()}
-              </Grid>
-            )}
+            <Grid item xs={12} className="text-center">
+              {renderRegister()}
+            </Grid>
           </Grid>
         </Paper>
       </div>
