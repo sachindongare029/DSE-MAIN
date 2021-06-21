@@ -38,7 +38,7 @@ function Home() {
     // let buyingAnn = Announcement.buying_announcement;
     let generalAnn = Announcement.site_general_announcement;
     // let annDate;
-    if (generalAnn) {
+    if (generalAnn && generalAnn.setting_value) {
       // if (buyingAnn && buyingAnn.setting_value && buyingAnn.setting_details) {
       //   annDate = new Date(buyingAnn.setting_details);
       // }
