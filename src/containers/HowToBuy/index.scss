@@ -4,7 +4,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      height: auto;
+      height: 100vh;
       width: 100%;
       z-index: -1;
     }
@@ -27,7 +27,7 @@
               width: 30%;
               border: 0;
               background-color: #7250ba;
-              border-radius: 7px;
+              border-radius: 2px;
               padding: 15px;
               color: #fff;
               line-height: 18px;

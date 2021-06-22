@@ -28,13 +28,8 @@ const useStyles = makeStyles((theme) => ({
 export default function About() {
   const classes = useStyles();
   return (
-    <div className="dse__about">
+    <div className="dse__about" id="dse-about">
       <div className={`about__page__container ${classes.root}`}>
-        <img
-          src="/banner/homepage-bg.jpg"
-          alt="banner"
-          className="banner__image"
-        />
         <div className="about__page__body">
           <div className="container top__section">
             <div className="top__info__block">
@@ -100,7 +95,11 @@ export default function About() {
                   </div>
                 </Grid>
                 <Grid item xs={4} className="right__section">
-                  <img src="/Images/phone-and-coin.jpg" alt="mobile" />
+                  <img
+                    src="/Images/phone-and-coin.jpg"
+                    data-aos={"fade-left"}
+                    alt="mobile"
+                  />
                 </Grid>
               </Grid>
               <div className="dse__working">
@@ -167,7 +166,12 @@ export default function About() {
                     </div>
                   </Grid>
                   <Grid item xs={4} className="left__section">
-                    <img src="/Images/diamonds.png" alt="circle" />
+                    <img
+                      src="/Images/diamonds.png"
+                      data-aos={"fade-left"}
+                      data-aos-once="true"
+                      alt="circle"
+                    />
                   </Grid>
                 </Grid>
                 <Grid container spacing={0} className="dse__notes">
@@ -217,7 +221,12 @@ export default function About() {
                   </p>
                 </Grid>
                 <Grid item xs={5} className="founder__image">
-                  <img src="/Images/founder.jpg" alt="Founder" />
+                  <img
+                    src="/Images/founder.jpg"
+                    data-aos={"fade-left"}
+                    data-aos-once="true"
+                    alt="Founder"
+                  />
                 </Grid>
               </Grid>
             </div>

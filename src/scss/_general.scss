@@ -7,3 +7,42 @@ body {
   font-family: "NotoSans-Regular", sans-serif;
   line-height: 1.7;
 }
+
+.animate__btn {
+  border-radius: 0;
+  background-color: #7251bb;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+}
+.animate__btn:before,
+.animate__btn:after {
+  border: 0 solid transparent;
+  transition: all 0.25s;
+  content: "";
+  height: 20px;
+  position: absolute;
+  width: 20px;
+}
+.animate__btn:before {
+  border-top: 3px solid #7251bb;
+  border-left: 3px solid #7251bb;
+  left: -6px;
+  top: -6px;
+}
+.animate__btn:after {
+  border-bottom: 3px solid #7251bb;
+  border-right: 3px solid #7251bb;
+  bottom: -6px;
+  right: -6px;
+}
+.animate__btn:hover {
+  background-color: #7251bb;
+}
+.animate__btn:hover:before,
+.animate__btn:hover:after {
+  height: calc(100% + 18px);
+  width: calc(100% + 18px);
+}

@@ -1,10 +1,10 @@
 import React from "react";
-import { NavLink as Link } from "react-router-dom";
+import { NavHashLink as Link } from "react-router-hash-link";
 import "./index.scss";
 
 function Header() {
   return (
-    <header className="container p-0">
+    <header className="pl-5 pr-5">
       <section className="top__section">
         <div className="left__logo__section">
           <Link to="/" replace>
@@ -19,24 +19,47 @@ function Header() {
           <li>
             <Link
               to={`/home`}
-              replace
-              // activeStyle={{ textDecoration: "underline" }}
+              smooth
+              activeStyle={{ fontWeight: "bold" }}
+              className="menu__item"
             >
               DSE Home
             </Link>
           </li>
           <li>
-            <Link to={`/how-to-buy`} replace>
-              HOW WE BUY DIAMONDS
+            <Link
+              to={`/home#how-we-buy-diamonds`}
+              smooth
+              activeStyle={{ fontWeight: "bold" }}
+              className="menu__item"
+            >
+              How We Buy Diamonds
             </Link>
           </li>
           <li>
-            <Link to={`/about`} replace>
-              ABOUT
+            <Link to={`/home#dse-about`} smooth className="menu__item">
+              About
             </Link>
           </li>
           <li>
-            <a href="https://sell.thedse.co/#/login">LOGIN</a>
+            <a
+              href="https://sell.thedse.co/#/login"
+              className="menu__item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Login
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://sell.thedse.co/#/register"
+              className="btn dse__register--btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sign Up
+            </a>
           </li>
         </ul>
       </section>

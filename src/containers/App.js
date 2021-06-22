@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { bindActionCreators } from "redux";
 import Routes from "../routes/Routes";
 import { IntlProvider } from "react-intl";
@@ -11,6 +11,8 @@ import { connect } from "react-redux";
 import { setCurrentLang } from "../store/Lang/LangAction";
 import { setAnnouncement } from "../store/Announcement/AnnouncementAction";
 import { axiosInstance } from "../network/apis/index";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 class App extends React.Component {
   componentDidMount() {
@@ -18,6 +20,11 @@ class App extends React.Component {
       .get("/getSettingDetails")
       .then((res) => this.props.setAnnouncement(res.data.setting))
       .catch((error) => console.log("error ", error));
+
+    AOS.init({
+      duration: 2000,
+    });
+    AOS.refresh();
   }
   render() {
     const { lang, loading } = this.props;
@@ -28,10 +35,10 @@ class App extends React.Component {
           dir={lang === "ar" ? "rtl" : "ltr"}
         >
           {loading ? <Loader /> : null}
-          <HashRouter>
+          <BrowserRouter>
             <MaterialSnackbar />
             <Routes lang={lang} />
-          </HashRouter>
+          </BrowserRouter>
         </div>
       </IntlProvider>
     );

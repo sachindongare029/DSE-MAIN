@@ -29,18 +29,13 @@ const useStyles = makeStyles((theme) => ({
 function HowToBuy() {
   const classes = useStyles();
   return (
-    <div className="dse__how-to">
+    <div className="dse__how-to" id="how-we-buy-diamonds">
       <div className={`how__to__page__container ${classes.root}`}>
-        <img
-          src="/banner/homepage-bg.jpg"
-          alt="banner"
-          className="banner__image"
-        />
         <div className="container page__body">
           <section className="top__section">
             <div className="guide">
               <div className="btn__heading">
-                <button>
+                <button className="animate__btn">
                   <span className="main__text">DOWNLOAD</span>
                   <span className="sub__text">PDF GUIDE</span>
                 </button>
@@ -87,10 +82,13 @@ function HowToBuy() {
                   <img
                     src="/Images/map.png"
                     alt="world map"
+                    data-aos={"fade-left"}
                     className="world__map"
                   />
                   <img
                     src="/Images/loupe.png"
+                    data-aos={"zoom-in"}
+                    data-aos-delay="500"
                     alt="loupe"
                     className="loupe__img"
                   />

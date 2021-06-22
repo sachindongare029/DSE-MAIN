@@ -1,27 +1,15 @@
 import React from "react";
 import { connect } from "react-redux";
-import { HashRouter, Switch, Redirect } from "react-router-dom";
-import * as LazyComponent from "../../utils/LazyLoaded";
-import PrivateRoute from "../../utils/PrivateRoute";
+import Home from "../Home/Home";
+import HowToBuy from "../HowToBuy";
+import About from "../About";
 
 function Dash() {
   return (
     <React.Fragment>
-      <div>
-        <HashRouter>
-          <Switch>
-            <PrivateRoute exact path="/">
-              <Redirect to="/home" />
-            </PrivateRoute>
-            <PrivateRoute component={LazyComponent.Home} path="/home" />
-            <PrivateRoute
-              component={LazyComponent.HowToBuy}
-              path="/how-to-buy"
-            />
-            <PrivateRoute component={LazyComponent.About} path="/about" />
-          </Switch>
-        </HashRouter>
-      </div>
+      <Home />
+      <HowToBuy />
+      <About />
     </React.Fragment>
   );
 }

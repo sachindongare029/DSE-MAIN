@@ -4,6 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import HowToBuy from "../HowToBuy";
 // import moment from "moment";
 // import "moment-timezone";
 import "./index.scss";
@@ -67,12 +68,7 @@ function Home() {
   return (
     <div className="dse__home">
       <div className={`container home__page__container ${classes.root}`}>
-        <img
-          src="/banner/homepage-bg.jpg"
-          alt="banner"
-          className="banner__image"
-        />
-        <Paper className={classes.paper}>
+        {/* <Paper className={classes.paper}>
           <Grid container spacing={0}>
             <Grid item xs={12} className="text-center">
               {renderAnnouncement()}
@@ -81,7 +77,7 @@ function Home() {
                   <Grid item xs={6}>
                     <a
                       href="https://sell.thedse.co/#/register"
-                      className="btn register--btn"
+                      className="btn register--btn animate__btn"
                     >
                       <span className="main__text">Register</span>
                       <span className="sub__text">to participate</span>
@@ -90,7 +86,7 @@ function Home() {
                   <Grid item xs={6}>
                     <a
                       href="https://sell.thedse.co/#/login"
-                      className="btn login--btn"
+                      className="btn login--btn animate__btn"
                     >
                       <span className="main__text">Login</span>
                       <span className="sub__text">to account</span>
@@ -100,8 +96,44 @@ function Home() {
               </div>
             </Grid>
           </Grid>
-        </Paper>
+        </Paper> */}
         <div className="middle__section">
+          <Grid container spacing={0} className="text-center">
+            <Grid item xs={8} className="middle__left">
+              <p>
+                The Diamond Standard Exchange is where all diamonds are
+                purchased for Diamond Standard commodities. We buy only from
+                registered vendors, who are established diamond manufacturers
+                and dealers around the world. Vendors offer us diamonds for
+                instant cash purchase or bids.{" "}
+                <strong>We do not buy diamond from consumers.</strong>
+              </p>
+              <p>
+                We purchase diamonds using a <strong>regulator-approved</strong>{" "}
+                and <strong>audited</strong> process. Our system automatically
+                buys or bids on thousands of round diamond types, to aquire
+                statistical samples of a large range of natural supply, and then
+                we pay COD with no returns.
+              </p>
+              <p>
+                All vendors must be existing GIA and IGI Clients, and deliver
+                the diamonds to their local IGI lab for confirmation. We handle
+                global settlement and customs.
+              </p>
+            </Grid>
+            <Grid
+              item
+              xs={4}
+              className="d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="/Images/diamonds.png"
+                data-aos={"fade-left"}
+                data-aos-once="true"
+                alt="product"
+              />
+            </Grid>
+          </Grid>
           <h3>EXCHANGE OVERVIEW</h3>
           <p>
             The Diamond Standard Exchange is where all diamonds are purchased
@@ -124,8 +156,13 @@ function Home() {
             settlement and customs.
           </p>
           <Grid container spacing={0} className="text-center">
-            <Grid item xs={6}>
-              <img src="/Images/diamonds.png" alt="product" />
+            <Grid item xs={6} className="middle__left">
+              <img
+                src="/Images/diamonds.png"
+                data-aos={"fade-right"}
+                data-aos-once="true"
+                alt="product"
+              />
             </Grid>
             <Grid item xs={6} className="d-flex align-items-center">
               <div className="right__section text-center">
@@ -133,7 +170,7 @@ function Home() {
                   A Diamond Standard Coin. The world's first and only
                   regulator-approved diamond commodity.
                 </div>
-                <Link to={`/how-to-buy`} replace className="btn">
+                <Link to={`/how-to-buy`} replace className="btn animate__btn">
                   HOW WE BUY DIAMONDS
                 </Link>
               </div>
@@ -169,7 +206,12 @@ function Home() {
               </Link>
             </Grid>
             <Grid item xs={6} className="bottom__right__section">
-              <img src="/banner/admin-screenshot.png" alt="screenshot" />
+              <img
+                src="/banner/admin-screenshot.png"
+                data-aos={"fade-left"}
+                data-aos-once="true"
+                alt="screenshot"
+              />
             </Grid>
           </Grid>
         </div>
