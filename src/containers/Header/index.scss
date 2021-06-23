@@ -1,6 +1,6 @@
 header {
   font-family: sans-serif;
-  transition: all 0.5s;
+  padding: 1rem 3rem;
   .top__section {
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ header {
       text-decoration: none;
       color: #333;
       .company-logo {
-        width: 145px;
+        width: 122px;
       }
     }
     svg {
@@ -45,10 +45,10 @@ header {
       color: #fff;
       background-color: #7250ba;
       border-radius: 20px;
-      padding: 8px 25px;
+      padding: 8px 35px;
     }
     .dse__register--btn:hover {
-      background-color: #6548a2;
+      background-color: #4d367b;
     }
   }
 }

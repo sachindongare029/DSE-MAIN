@@ -1,6 +1,8 @@
+$primaryColor: #7250ba;
+
 .home__page__container {
   .vendors__notice__block {
-    color: #7250ba;
+    color: $primaryColor;
     background-color: #fff;
     padding: 20px;
     font-family: sans-serif;
@@ -25,7 +27,7 @@
     font-family: sans-serif;
     .register--btn,
     .login--btn {
-      background-color: #7250ba;
+      background-color: $primaryColor;
       border-radius: 2px;
       color: #fff;
       width: 75%;
@@ -40,51 +42,139 @@
   }
   .middle__section {
     margin-top: 20px;
-    padding: 20px 0;
+    padding: 3rem 0;
     background-color: white;
-    h3 {
-      font-weight: 700;
-      color: #7250ba;
-      text-align: center;
-      font-family: sans-serif;
-      margin-bottom: 20px;
-    }
     p {
       text-align: justify;
       margin-bottom: 20px;
+      color: #364361;
     }
-    .right__section {
-      width: 48%;
-      margin: 0 auto;
-      .dse__info {
-        font-weight: 700;
+    .middle__left {
+      h1 {
+        font-family: "Inter Boldest";
+        color: #243e63;
+        margin-bottom: 30px;
       }
-      a {
-        font-family: sans-serif;
-        background-color: #8055c3;
-        color: #fff;
-        font-size: 14px;
-        padding: 15px 20px;
-        margin-top: 15px;
+    }
+    .feature__container {
+      width: 70%;
+      padding: 4rem 0;
+      h5,
+      h2 {
         font-weight: 700;
-        border-radius: 2px;
-        border: 3px solid #fff;
-        box-shadow: 0px 0px 12px 1px #444;
+        text-align: center;
+        color: $primaryColor;
+        letter-spacing: 0.1em;
+        font-size: 1.1rem;
+      }
+      h2 {
+        font-family: "Inter Boldest";
+        letter-spacing: 0.025em;
+        color: #243e63;
+        font-size: 44px;
+        margin: 20px 0;
+        span {
+          color: $primaryColor;
+        }
+      }
+      p {
+        font-family: "Inter Medium";
+        width: 75%;
+        margin: 0 auto;
+        font-size: 18px;
+        color: #7c8ba1;
+      }
+      .steps__cards {
+        h5 {
+          color: #243e63;
+          text-align: center;
+          width: 70%;
+          margin: 30px auto;
+          letter-spacing: 0.03em;
+          padding: 0 30px;
+        }
+        .step {
+          .step__card {
+            display: flex;
+            gap: 15px;
+            padding: 15px;
+            border: 1px solid transparent;
+            height: 100%;
+            .step__count {
+              display: flex;
+              width: 60px;
+              height: 50px;
+              border: 1px solid #a7a7a7;
+              border-radius: 999px;
+              justify-content: center;
+              align-items: center;
+              color: #7250ba;
+            }
+            .step__info {
+              width: 90%;
+              text-align: left;
+              .title {
+                margin-top: 1rem;
+                letter-spacing: 0.025em;
+                font-weight: 700;
+                font-size: 1.3rem;
+                line-height: 1;
+              }
+              p {
+                width: 100%;
+                margin: 10px 0 0 0;
+                font-size: 16px;
+                color: #7c8ba1;
+              }
+            }
+          }
+          .step__card:hover {
+            transition: all 0.15s;
+            border: 1px solid #e2e2e2;
+            border-radius: 20px;
+            box-shadow: 6px 6px 5px 0px rgba(125, 125, 125, 0.75);
+          }
+        }
+      }
+      .price__ann {
+        width: 70%;
+        margin: 20px auto;
+        text-align: center;
+        h5 {
+          color: #243e63;
+          text-align: center;
+          margin: 30px auto;
+          letter-spacing: 0.03em;
+        }
+        a {
+          display: inline-block;
+          text-decoration: none;
+          outline: none;
+          color: #fff;
+          background-color: #7250ba;
+          border-radius: 40px;
+          padding: 10px 25px;
+        }
+        a:hover {
+          background-color: #4d367b;
+        }
       }
     }
   }
-  .bottom__section {
-    padding: 15px;
-    margin-top: 30px;
+  .features__section {
+    padding: 15px 0;
     background-color: white;
-    h3 {
-      font-weight: 700;
-      color: #7250ba;
-      font-family: sans-serif;
-      text-align: center;
-      margin-bottom: 25px;
-    }
-    .bottom__left__section {
+    .dse__features {
+      color: #243e63;
+      h1 {
+        font-family: "Inter Boldest";
+        letter-spacing: 0.025em;
+        font-size: 44px;
+        color: #243e63;
+        span {
+          color: $primaryColor;
+        }
+      }
       ol,
       ul {
         padding-left: 20px;
@@ -93,10 +183,26 @@
         display: block;
         margin-top: 10px;
         text-decoration: underline;
-        color: #000;
+        color: #243e63;
+      }
+      .coin__information {
+        font-weight: 700;
+        margin-top: 10px;
+        a {
+          display: inline-block;
+          text-decoration: none;
+          outline: none;
+          color: #fff;
+          background-color: #7250ba;
+          border-radius: 40px;
+          padding: 10px 25px;
+        }
+        a:hover {
+          background-color: #4d367b;
+        }
       }
     }
-    .bottom__right__section {
+    .screenshot__image {
       img {
         width: 100%;
         box-shadow: 0px 0px 7px 1px #444;

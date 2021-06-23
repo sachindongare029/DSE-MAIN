@@ -3,14 +3,15 @@ import { connect } from "react-redux";
 import Home from "../Home/Home";
 import HowToBuy from "../HowToBuy";
 import About from "../About";
+import "./index.scss";
 
 function Dash() {
   return (
-    <React.Fragment>
+    <div className="dse__content">
       <Home />
       <HowToBuy />
       <About />
-    </React.Fragment>
+    </div>
   );
 }
 

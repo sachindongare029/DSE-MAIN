@@ -31,11 +31,65 @@ function HowToBuy() {
   return (
     <div className="dse__how-to" id="how-we-buy-diamonds">
       <div className={`how__to__page__container ${classes.root}`}>
-        <div className="container page__body">
+        <div className="page__body">
+          <div className="how__buy__overview">
+            <Grid container spacing={5}>
+              <Grid item xs={6} className="left__section">
+                <div className="map__section">
+                  <img
+                    src="/Images/map.png"
+                    alt="world map"
+                    data-aos={"fade-left"}
+                    data-aos-once="true"
+                    className="world__map"
+                  />
+                  <img
+                    src="/Images/loupe.png"
+                    data-aos={"zoom-in"}
+                    data-aos-delay="500"
+                    data-aos-once="true"
+                    alt="loupe"
+                    className="loupe__img"
+                  />
+                </div>
+              </Grid>
+              <Grid item xs={6} className="text-left right__section">
+                <h6>STEPS</h6>
+                <h5>How we buy:</h5>
+                <div className="how__content">
+                  <p>
+                    We buy large volumes of graded and ungraded natural diamonds
+                    from established vendors, for a regulated commodity, using
+                    an automated price discovery process.
+                  </p>
+                  <div className="buy__steps">
+                    <div className="first__step">
+                      <span className="step__count">1</span>
+                      <span className="step">
+                        Upload a confidential list of diamonds with your price
+                      </span>
+                    </div>
+                    <div className="second__step">
+                      <span className="step__count">2</span>
+                      <span className="step">
+                        Get an instant purchase order
+                      </span>
+                    </div>
+                    <div className="third__step">
+                      <span className="step__count">3</span>
+                      <span className="step">
+                        Deliver to a local IGI gem lab, we pay upon inspection
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </Grid>
+            </Grid>
+          </div>
           <section className="top__section">
             <div className="guide">
               <div className="btn__heading">
-                <button className="animate__btn">
+                <button className="btn">
                   <span className="main__text">DOWNLOAD</span>
                   <span className="sub__text">PDF GUIDE</span>
                 </button>

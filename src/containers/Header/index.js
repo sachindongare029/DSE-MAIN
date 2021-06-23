@@ -4,7 +4,7 @@ import "./index.scss";
 
 function Header() {
   return (
-    <header className="pl-5 pr-5">
+    <header>
       <section className="top__section">
         <div className="left__logo__section">
           <Link to="/" replace>

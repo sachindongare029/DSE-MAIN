@@ -3,8 +3,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import HowToBuy from "../HowToBuy";
+import { NavHashLink as Link } from "react-router-hash-link";
+import BackupIcon from "@material-ui/icons/Backup";
+import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import DirectionsBikeIcon from "@material-ui/icons/DirectionsBike";
+import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
+import RecordVoiceOverIcon from "@material-ui/icons/RecordVoiceOver";
+import KeyboardReturnIcon from "@material-ui/icons/KeyboardReturn";
 // import moment from "moment";
 // import "moment-timezone";
 import "./index.scss";
@@ -67,7 +72,7 @@ function Home() {
 
   return (
     <div className="dse__home">
-      <div className={`container home__page__container ${classes.root}`}>
+      <div className={`home__page__container ${classes.root}`}>
         {/* <Paper className={classes.paper}>
           <Grid container spacing={0}>
             <Grid item xs={12} className="text-center">
@@ -98,8 +103,9 @@ function Home() {
           </Grid>
         </Paper> */}
         <div className="middle__section">
-          <Grid container spacing={0} className="text-center">
+          <Grid container spacing={0}>
             <Grid item xs={8} className="middle__left">
+              <h1>Exchange Overview</h1>
               <p>
                 The Diamond Standard Exchange is where all diamonds are
                 purchased for Diamond Standard commodities. We buy only from
@@ -134,86 +140,94 @@ function Home() {
               />
             </Grid>
           </Grid>
-          <h3>EXCHANGE OVERVIEW</h3>
-          <p>
-            The Diamond Standard Exchange is where all diamonds are purchased
-            for Diamond Standard commodities. We buy only from registered
-            vendors, who are established diamond manufacturers and dealers
-            around the world. Vendors offer us diamonds for instant cash
-            purchase or bids.{" "}
-            <strong>We do not buy diamond from consumers.</strong>
-          </p>
-          <p>
-            We purchase diamonds using a <strong>regulator-approved</strong> and{" "}
-            <strong>audited</strong> process. Our system automatically buys or
-            bids on thousands of round diamond types, to aquire statistical
-            samples of a large range of natural supply, and then we pay COD with
-            no returns.
-          </p>
-          <p>
-            All vendors must be existing GIA and IGI Clients, and deliver the
-            diamonds to their local IGI lab for confirmation. We handle global
-            settlement and customs.
-          </p>
-          <Grid container spacing={0} className="text-center">
-            <Grid item xs={6} className="middle__left">
-              <img
-                src="/Images/diamonds.png"
-                data-aos={"fade-right"}
-                data-aos-once="true"
-                alt="product"
-              />
-            </Grid>
-            <Grid item xs={6} className="d-flex align-items-center">
-              <div className="right__section text-center">
-                <div className="dse__info">
-                  A Diamond Standard Coin. The world's first and only
-                  regulator-approved diamond commodity.
+          <div className="container feature__container">
+            <h5>FEATURES</h5>
+            <h2>
+              Simple System & Prompt <span>Payments</span>
+            </h2>
+            <p className="text-center mb-5">
+              We buy large volumes of graded and ungraded natural diamonds from
+              established global vendors using an automated price discovery
+              process.
+            </p>
+            <Grid container spacing={3} className="steps__cards">
+              <Grid item xs={4} className="step first__step">
+                <div className="step__card">
+                  <div className="step__count">
+                    <BackupIcon />
+                  </div>
+                  <div className="step__info">
+                    <span className="title">Upload</span>
+                    <p>Upload diamond list with offers</p>
+                  </div>
                 </div>
-                <Link to={`/how-to-buy`} replace className="btn animate__btn">
-                  HOW WE BUY DIAMONDS
-                </Link>
-              </div>
-            </Grid>
-          </Grid>
-        </div>
-        <div className="bottom__section">
-          <h3>SIMPLE SYSTEM & PROMPT PAYMENTS</h3>
-          <Grid container spacing={10}>
-            <Grid item xs={6} className="bottom__left__section">
-              <p>
-                We buy large volumes of graded and ungraded natural diamonds
-                from established global vendors using an automated price
-                discovery process.{" "}
-              </p>
-              <strong>Three Step Process for Vendors</strong>
-              <ol>
-                <li>Upload diamond list with offers</li>
-                <li>Get an instant purchase order</li>
-                <li>Deliver to local IGI gem lab</li>
-              </ol>
-              <span>
+              </Grid>
+              <Grid item xs={4} className="step second__step">
+                <div className="step__card">
+                  <div className="step__count">
+                    <ShoppingBasketIcon />
+                  </div>
+                  <div className="step__info">
+                    <span className="title">Purchase</span>
+                    <p>Get an instant purchase order</p>
+                  </div>
+                </div>
+              </Grid>
+              <Grid item xs={4} className="step third__step">
+                <div className="step__card">
+                  <div className="step__count">
+                    <DirectionsBikeIcon />
+                  </div>
+                  <div className="step__info">
+                    <span className="title">Deliver</span>
+                    <p>Deliver to local IGI gem lab</p>
+                  </div>
+                </div>
+              </Grid>
+              <h5>
                 Our computer only selects the diamonds with the best prices.
-              </span>
-              <ul>
-                <li>We pay quickly.</li>
-                <li>We do not negotiate.</li>
-                <li>We never reject or return a diamond.</li>
-              </ul>
-              <strong>To sell to us, simply offer us your best prices.</strong>
-              <Link to={`/how-to-buy`} replace>
-                Learn more about how we buy diamonds.
+              </h5>
+              <Grid item xs={4} className="step first__step">
+                <div className="step__card">
+                  <div className="step__count">
+                    <AttachMoneyIcon />
+                  </div>
+                  <div className="step__info">
+                    <span className="title">Payments</span>
+                    <p>We pay quickly.</p>
+                  </div>
+                </div>
+              </Grid>
+              <Grid item xs={4} className="step second__step">
+                <div className="step__card">
+                  <div className="step__count">
+                    <RecordVoiceOverIcon />
+                  </div>
+                  <div className="step__info">
+                    <span className="title">No Negotiation</span>
+                    <p>We do not negotiate.</p>
+                  </div>
+                </div>
+              </Grid>
+              <Grid item xs={4} className="step third__step">
+                <div className="step__card">
+                  <div className="step__count">
+                    <KeyboardReturnIcon />
+                  </div>
+                  <div className="step__info">
+                    <span className="title">Return</span>
+                    <p>We never reject or return a diamond.</p>
+                  </div>
+                </div>
+              </Grid>
+            </Grid>
+            <div className="price__ann">
+              <h5>To sell to us, simply offer us your best prices.</h5>
+              <Link to={`/home#how-we-buy-diamonds`} smooth className="btn">
+                How We Buy Diamonds
               </Link>
-            </Grid>
-            <Grid item xs={6} className="bottom__right__section">
-              <img
-                src="/banner/admin-screenshot.png"
-                data-aos={"fade-left"}
-                data-aos-once="true"
-                alt="screenshot"
-              />
-            </Grid>
-          </Grid>
+            </div>
+          </div>
         </div>
       </div>
     </div>

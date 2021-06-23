@@ -1,3 +1,5 @@
+$primaryColor: #7250ba;
+
 .dse__how-to {
   .how__to__page__container {
     .banner__image {
@@ -10,9 +12,91 @@
     }
     .page__body {
       background-color: #fff;
-      padding-top: 20px;
+      padding-top: 40px;
+      .how__buy__overview {
+        h2 {
+          margin: 25px 0;
+          color: $primaryColor;
+          text-align: center;
+          font-family: sans-serif;
+          font-weight: 700;
+        }
+        .left__section {
+          position: relative;
+          .map__section {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            .world__map {
+              width: 100%;
+            }
+            .loupe__img {
+              position: absolute;
+              top: 235px;
+              right: 20px;
+              width: 160px;
+              filter: drop-shadow(rgba(0, 0, 0, 0.6) -3px 29px 11px);
+              clip-path: inset(0 0px -50px -28px);
+            }
+          }
+        }
+        .right__section {
+          h5 {
+            font-weight: 700;
+            margin-bottom: 1rem;
+          }
+          p {
+            font-size: 14px;
+            text-align: justify;
+            color: #000;
+            margin-bottom: 2rem;
+          }
+          .buy__steps {
+            color: #fff;
+            .first__step,
+            .second__step,
+            .third__step {
+              display: flex;
+              align-items: center;
+              height: 65px;
+              .step__count {
+                width: 15%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 32px;
+                font-weight: 700;
+                text-align: center;
+                font-family: monospace;
+              }
+              .step {
+                padding: 10px;
+                width: 85%;
+                font-size: 14px;
+              }
+            }
+            .first__step {
+              background-color: #b79ddc;
+              border-bottom: 1px solid $primaryColor;
+              .step__count {
+                border-right: 1px solid $primaryColor;
+              }
+            }
+            .second__step {
+              background-color: #946dcb;
+              .step__count {
+                border-right: 1px solid $primaryColor;
+              }
+            }
+            .third__step {
+              background-color: $primaryColor;
+            }
+          }
+        }
+      }
       .top__section {
-        padding: 0 60px 50px 60px;
+        padding: 40px 0;
         border-bottom: 2px solid #909090;
         .guide {
           border-top: 2px solid #6b6b6b;
@@ -27,17 +111,22 @@
               width: 30%;
               border: 0;
               background-color: #7250ba;
-              border-radius: 2px;
-              padding: 15px;
               color: #fff;
               line-height: 18px;
+              outline: none;
+              border-radius: 40px;
+              padding: 20px 25px;
               .main__text {
                 text-transform: uppercase;
                 font-weight: 700;
               }
               .sub__text {
+                font-family: "Inter Thin";
                 display: block;
               }
+            }
+            button:hover {
+              background-color: #4d367b;
             }
             h4 {
               font-weight: 700;
@@ -93,19 +182,19 @@
               }
               .first__step {
                 background-color: #b79ddc;
-                border-bottom: 1px solid #7251bb;
+                border-bottom: 1px solid $primaryColor;
                 .step__count {
-                  border-right: 1px solid #7251bb;
+                  border-right: 1px solid $primaryColor;
                 }
               }
               .second__step {
                 background-color: #946dcb;
                 .step__count {
-                  border-right: 1px solid #7251bb;
+                  border-right: 1px solid $primaryColor;
                 }
               }
               .third__step {
-                background-color: #7251bb;
+                background-color: $primaryColor;
               }
             }
           }
@@ -232,7 +321,7 @@
               background-color: #946dcb;
             }
             .chart__bottom__section {
-              background-color: #7251bb;
+              background-color: $primaryColor;
             }
           }
         }
