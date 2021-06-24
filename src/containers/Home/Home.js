@@ -201,7 +201,8 @@ function Home() {
               <Grid item xs={4} className="step second__step">
                 <div className="step__card">
                   <div className="step__count">
-                    <RecordVoiceOverIcon />
+                    {/* <RecordVoiceOverIcon /> */}
+                    <img src="/icons/negotiation.png" alt="negotiation" />
                   </div>
                   <div className="step__info">
                     <span className="title">No Negotiation</span>
@@ -212,7 +213,8 @@ function Home() {
               <Grid item xs={4} className="step third__step">
                 <div className="step__card">
                   <div className="step__count">
-                    <KeyboardReturnIcon />
+                    {/* <KeyboardReturnIcon /> */}
+                    <img src="/icons/return.png" alt="return" />
                   </div>
                   <div className="step__info">
                     <span className="title">Return</span>
@@ -223,9 +225,6 @@ function Home() {
             </Grid>
             <div className="price__ann">
               <h5>To sell to us, simply offer us your best prices.</h5>
-              <Link to={`/home#how-we-buy-diamonds`} smooth className="btn">
-                How We Buy Diamonds
-              </Link>
             </div>
           </div>
         </div>

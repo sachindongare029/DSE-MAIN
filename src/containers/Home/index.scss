@@ -88,7 +88,7 @@ $primaryColor: #7250ba;
         h5 {
           color: #243e63;
           text-align: center;
-          width: 70%;
+          width: 100%;
           margin: 30px auto;
           letter-spacing: 0.03em;
           padding: 0 30px;
@@ -102,13 +102,17 @@ $primaryColor: #7250ba;
             height: 100%;
             .step__count {
               display: flex;
-              width: 60px;
-              height: 50px;
+              width: 70px;
+              height: 55px;
               border: 1px solid #a7a7a7;
               border-radius: 999px;
               justify-content: center;
               align-items: center;
               color: #7250ba;
+              img {
+                width: 30px;
+                filter: brightness(50%) sepia(100) saturate(100) hue-rotate(266deg);
+              }
             }
             .step__info {
               width: 90%;

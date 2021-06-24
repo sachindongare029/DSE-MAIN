@@ -10,7 +10,7 @@ function Dash() {
     <div className="dse__content">
       <Home />
       <HowToBuy />
-      <About />
+      {/* <About /> */}
     </div>
   );
 }

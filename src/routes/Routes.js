@@ -21,7 +21,7 @@ const Routes = () => {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Redirect exact from="/" to="/home" />
+          {/* <Redirect exact from="/" to="/home" /> */}
           <LazyComponent.NotFound path="/404" exact />
           <Route component={LazyComponent.Dash} path="/" />
           <Redirect to="/404" />

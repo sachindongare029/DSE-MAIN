@@ -18,7 +18,7 @@ function Header() {
         <ul className="right__sub--section">
           <li>
             <Link
-              to={`/home`}
+              to={`/`}
               smooth
               activeStyle={{ fontWeight: "bold" }}
               className="menu__item"
@@ -28,7 +28,7 @@ function Header() {
           </li>
           <li>
             <Link
-              to={`/home#how-we-buy-diamonds`}
+              to={`/#how-we-buy-diamonds`}
               smooth
               activeStyle={{ fontWeight: "bold" }}
               className="menu__item"
@@ -37,7 +37,7 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link to={`/home#dse-about`} smooth className="menu__item">
+            <Link to={`/#dse-about`} smooth className="menu__item">
               About
             </Link>
           </li>

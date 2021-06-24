@@ -3,6 +3,7 @@ import "./index.scss";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import GetAppIcon from "@material-ui/icons/GetApp";
+import Processes from "./Processes";
 // import Paper from "@material-ui/core/Paper";
 // import { Link } from "react-router-dom";
 
@@ -194,8 +195,9 @@ function HowToBuy() {
             </div>
           </section>
           <section className="dse__specialities">
+            <h6>HIGHLIGHTS</h6>
             <h1>
-              Our <span>Speciality</span>
+              Key <span>USPs</span>
             </h1>
             <Grid container spacing={10} className="dse__features">
               <Grid item xs={6} className="text-center left__section">
@@ -280,81 +282,19 @@ function HowToBuy() {
                 </div>
               </Grid>
             </Grid>
-            <div className="dse__features__chart">
-              <span>
-                We buy statistical samples of all diamonds from established
-                vendors, for a regulated commodity using an audited price
-                discovery process.
-              </span>
-              <div className="chart__container">
-                <div className="chart__top__section">
-                  <div className="chart__count">
-                    <span>1</span>
-                  </div>
-                  <div className="info__section">
-                    <span>
-                      Upload a private list of diamonds with your best COD
-                      price.
-                    </span>
-                    <ul>
-                      <li>For next day delivery to your IGI Lab ONLY.</li>
-                      <li>
-                        Round, 0.21 to 0.75 (soon 1.99) carats, D-L, FL-SI2,
-                        EX-VG Cut.
-                      </li>
-                      <li>
-                        Diamonds above $750/ct must already be GIA Graded.
-                      </li>
-                      <li>Your lists are confidential, and so are our bids.</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="chart__middle__section">
-                  <div className="chart__count">
-                    <span>2</span>
-                  </div>
-                  <div className="info__section">
-                    <span>
-                      We instantly buy or bid on some, or all, of your diamonds.
-                    </span>
-                    <ul>
-                      <li>
-                        We may accept your asking price, or make an instant cash
-                        bid.
-                      </li>
-                      <li>
-                        The commodity is not jewelry, we need all types of
-                        diamonds.
-                      </li>
-                      <li>
-                        Inclusions welcome, printed GIA paperwork not required.
-                      </li>
-                      <li>
-                        Bids change frequently as we fill our commodity orders
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="chart__bottom__section">
-                  <div className="chart__count">
-                    <span>3</span>
-                  </div>
-                  <div className="info__section">
-                    <span>Accept or Reject our Offer.</span>
-                    <ul>
-                      <li>Our system generates an instant purchase order.</li>
-                      <li>
-                        Deliver to your local IGI Lab – they verify that the
-                        diamonds match the certs, or grade ungraded diamonds for
-                        us.
-                      </li>
-                      <li>We pay COD, and never return a matching diamond.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
           </section>
+          <div className="dse__features__chart">
+            <h6>HOW IT WORKS</h6>
+            <h1>
+              Buying <span>Process</span>
+            </h1>
+            <p>
+              We buy statistical samples of all diamonds from established
+              vendors, for a regulated commodity using an audited price
+              discovery process.
+            </p>
+            <Processes />
+          </div>
         </div>
       </div>
     </div>
