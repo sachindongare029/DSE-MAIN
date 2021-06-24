@@ -97,18 +97,6 @@ function HowToBuy() {
             </Grid>
           </div>
           <section className="what__buy__section">
-            {/* <div className="guide">
-              <div className="btn__heading">
-                <button className="btn">
-                  <span className="main__text">DOWNLOAD</span>
-                  <span className="sub__text">PDF GUIDE</span>
-                </button>
-                <h4>
-                  Learn about our buying process and read answers to Frequently
-                  Asked Questions
-                </h4>
-              </div>
-            </div> */}
             <div className="info__section">
               <Grid container spacing={3} className="diamond__range">
                 <Grid item xs={5} className="left__section">
@@ -205,75 +193,90 @@ function HowToBuy() {
               </Grid>
             </div>
           </section>
-          <section className="middle__section">
+          <section className="dse__specialities">
+            <h1>
+              Our <span>Speciality</span>
+            </h1>
             <Grid container spacing={10} className="dse__features">
               <Grid item xs={6} className="text-center left__section">
-                <div className="image__section">
-                  <img src="/Images/desktop.jpg" alt="desktop" />
-                </div>
-                <div className="info__section">
-                  <h5>We Buy or Bid Automatically</h5>
-                  <p className="text-justify">
-                    Upload diamonds, with a price of immediate, COD delivery.
-                    Some diamonds we buy at your price, and for others, we make
-                    a bid. We buy statistical samples of all diamonds, and our
-                    system automatically adjusts our bids. If you accept our
-                    bid, we instantly sent you a purchase order. We always pay
-                    COD after GIA confirmation.
-                  </p>
+                <div className="top__background"></div>
+                <div className="feature__card">
+                  <div className="image__section">
+                    <h5>We Buy or Bid Automatically</h5>
+                    <img src="/Images/desktop.jpg" alt="desktop" />
+                  </div>
+                  <div className="info__section">
+                    <p className="text-justify">
+                      Upload diamonds, with a price of immediate, COD delivery.
+                      Some diamonds we buy at your price, and for others, we
+                      make a bid. We buy statistical samples of all diamonds,
+                      and our system automatically adjusts our bids. If you
+                      accept our bid, we instantly sent you a purchase order. We
+                      always pay COD after GIA confirmation.
+                    </p>
+                  </div>
                 </div>
               </Grid>
               <Grid item xs={6} className="text-center right__section">
-                <div className="image__section">
-                  <img src="/Images/scooter.jpg" alt="scooter" />
-                </div>
-                <div className="info__section">
-                  <h5>You Deliver Locally</h5>
-                  <p className="text-justify">
-                    You deliver the diamonds to your GIA Lab by the end of the
-                    next business day. They inspect diamonds for us, to confirm
-                    that they match the GIA Report. At prices under $750/ct, we
-                    buy ungraded diamonds, based on your assertion of your
-                    quality, and the IGI grades them for us. We pay more for
-                    graded diamonds, and ones already in the USA.
-                  </p>
+                <div className="top__background"></div>
+                <div className="feature__card">
+                  <div className="image__section">
+                    <h5>You Deliver Locally</h5>
+                    <img src="/Images/scooter.jpg" alt="scooter" />
+                  </div>
+                  <div className="info__section">
+                    <p className="text-justify">
+                      You deliver the diamonds to your GIA Lab by the end of the
+                      next business day. They inspect diamonds for us, to
+                      confirm that they match the GIA Report. At prices under
+                      $750/ct, we buy ungraded diamonds, based on your assertion
+                      of your quality, and the IGI grades them for us. We pay
+                      more for graded diamonds, and ones already in the USA.
+                    </p>
+                  </div>
                 </div>
               </Grid>
               <Grid item xs={6} className="text-center left__section">
-                <div className="image__section">
-                  <img src="/Images/cash.jpg" alt="cash" />
-                </div>
-                <div className="info__section">
-                  <h5>COD, No Returns</h5>
-                  <p className="text-justify m-0">
-                    Once the IGI confirms your diamonds, we pay in full by bank
-                    wire. For uncertified diamonds, we pay after grading. Your
-                    diamonds must match the quality you asserted.
-                  </p>
-                  <p className="text-justify">
-                    We buy diamonds based on the GIA grading report and the
-                    price, and never reject a diamond that matches the cert.
-                  </p>
+                <div className="top__background"></div>
+                <div className="feature__card">
+                  <div className="image__section">
+                    <h5>COD, No Returns</h5>
+                    <img src="/Images/cash.jpg" alt="cash" />
+                  </div>
+                  <div className="info__section">
+                    <p className="text-justify mb-1">
+                      Once the IGI confirms your diamonds, we pay in full by
+                      bank wire. For uncertified diamonds, we pay after grading.
+                      Your diamonds must match the quality you asserted.
+                    </p>
+                    <p className="text-justify mt-1">
+                      We buy diamonds based on the GIA grading report and the
+                      price, and never reject a diamond that matches the cert.
+                    </p>
+                  </div>
                 </div>
               </Grid>
               <Grid item xs={6} className="text-center right__section">
-                <div className="image__section">
-                  <img src="/Images/yoga.jpg" alt="yoga" />
-                </div>
-                <div className="info__section">
-                  <h3>NO NEGOTIATING</h3>
-                  <p className="text-justify">
-                    We buy thousands of diamonds from hundreds of vendors daily,
-                    based strictly on their GIA grades and price. We
-                    automatically adjust our prices, and don't negotiate
-                    individual purchases. Throughout the day, as we need a
-                    smaller number of specific diamonds. we are more likely to
-                    accept your asking price. Our market making system
-                    automatically raises our bids to fulfill our statistical
-                    sampling requirements. If you hold out, we will likely pay
-                    more, but then again, another vendor might offer similar
-                    stones and we won't need yours.
-                  </p>
+                <div className="top__background"></div>
+                <div className="feature__card">
+                  <div className="image__section">
+                    <h5>NO NEGOTIATING</h5>
+                    <img src="/Images/yoga.jpg" alt="yoga" />
+                  </div>
+                  <div className="info__section">
+                    <p className="text-justify">
+                      We buy thousands of diamonds from hundreds of vendors
+                      daily, based strictly on their GIA grades and price. We
+                      automatically adjust our prices, and don't negotiate
+                      individual purchases. Throughout the day, as we need a
+                      smaller number of specific diamonds. we are more likely to
+                      accept your asking price. Our market making system
+                      automatically raises our bids to fulfill our statistical
+                      sampling requirements. If you hold out, we will likely pay
+                      more, but then again, another vendor might offer similar
+                      stones and we won't need yours.
+                    </p>
+                  </div>
                 </div>
               </Grid>
             </Grid>
