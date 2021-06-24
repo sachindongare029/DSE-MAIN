@@ -2,17 +2,8 @@ $primaryColor: #7250ba;
 
 .dse__how-to {
   .how__to__page__container {
-    .banner__image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100%;
-      z-index: -1;
-    }
     .page__body {
       background-color: #fff;
-      padding-top: 40px;
       .how__buy__overview {
         h2 {
           margin: 25px 0;
@@ -32,7 +23,7 @@ $primaryColor: #7250ba;
             }
             .loupe__img {
               position: absolute;
-              top: 235px;
+              top: 320px;
               right: 20px;
               width: 160px;
               filter: drop-shadow(rgba(0, 0, 0, 0.6) -3px 29px 11px);
@@ -41,221 +32,191 @@ $primaryColor: #7250ba;
           }
         }
         .right__section {
-          h5 {
+          h6 {
+            color: $primaryColor;
             font-weight: 700;
-            margin-bottom: 1rem;
+            letter-spacing: 0.1em;
+            margin: 0;
           }
-          p {
-            font-size: 14px;
-            text-align: justify;
-            color: #000;
-            margin-bottom: 2rem;
-          }
-          .buy__steps {
-            color: #fff;
-            .first__step,
-            .second__step,
-            .third__step {
-              display: flex;
-              align-items: center;
-              height: 65px;
-              .step__count {
-                width: 15%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 32px;
-                font-weight: 700;
-                text-align: center;
-                font-family: monospace;
-              }
-              .step {
-                padding: 10px;
-                width: 85%;
-                font-size: 14px;
-              }
-            }
-            .first__step {
-              background-color: #b79ddc;
-              border-bottom: 1px solid $primaryColor;
-              .step__count {
-                border-right: 1px solid $primaryColor;
-              }
-            }
-            .second__step {
-              background-color: #946dcb;
-              .step__count {
-                border-right: 1px solid $primaryColor;
-              }
-            }
-            .third__step {
-              background-color: $primaryColor;
-            }
-          }
-        }
-      }
-      .top__section {
-        padding: 40px 0;
-        border-bottom: 2px solid #909090;
-        .guide {
-          border-top: 2px solid #6b6b6b;
-          border-bottom: 2px solid #6b6b6b;
-          .btn__heading {
-            display: flex;
-            align-items: center;
-            font-family: sans-serif;
-            padding: 25px 60px;
-            margin: auto;
-            button {
-              width: 30%;
-              border: 0;
-              background-color: #7250ba;
-              color: #fff;
-              line-height: 18px;
-              outline: none;
-              border-radius: 40px;
-              padding: 20px 25px;
-              .main__text {
-                text-transform: uppercase;
-                font-weight: 700;
-              }
-              .sub__text {
-                font-family: "Inter Thin";
-                display: block;
-              }
-            }
-            button:hover {
-              background-color: #4d367b;
-            }
-            h4 {
-              font-weight: 700;
-              color: #7253c1;
-              margin-left: 40px;
-              margin-bottom: 0;
-            }
-          }
-        }
-        .info__section {
-          h2 {
-            margin: 25px 0;
-            color: #7250ba;
-            text-align: center;
-            font-family: sans-serif;
+          h1 {
             font-weight: 700;
-          }
-          .left__section {
-            h5 {
-              font-weight: 700;
-              margin-bottom: 1rem;
+            margin: 15px 0;
+            font-family: "Inter Boldest";
+            color: #243e63;
+            span {
+              color: $primaryColor;
             }
+          }
+          .how__content {
             p {
+              font-family: "Inter medium";
+              color: #718096;
+              font-weight: 500;
               font-size: 14px;
               text-align: justify;
-              color: #000;
               margin-bottom: 2rem;
             }
             .buy__steps {
-              color: #fff;
+              color: #000;
               .first__step,
               .second__step,
               .third__step {
                 display: flex;
-                align-items: center;
-                height: 65px;
+                margin-bottom: 20px;
                 .step__count {
-                  width: 15%;
+                  width: 10%;
+                  color: #cbd5e0;
                   height: 100%;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  font-size: 32px;
+                  font-size: 38px;
                   font-weight: 700;
-                  text-align: center;
-                  font-family: monospace;
                 }
                 .step {
+                  width: 90%;
                   padding: 10px;
-                  width: 85%;
                   font-size: 14px;
+                  color: #718096;
+                  font-weight: 500;
+                  font-family: "Inter medium";
+                  h3 {
+                    color: #243e63;
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 0.05rem;
+                  }
+                  span {
+                    display: inline-block;
+                    width: 60%;
+                    line-height: 1.5rem;
+                  }
                 }
-              }
-              .first__step {
-                background-color: #b79ddc;
-                border-bottom: 1px solid $primaryColor;
-                .step__count {
-                  border-right: 1px solid $primaryColor;
-                }
-              }
-              .second__step {
-                background-color: #946dcb;
-                .step__count {
-                  border-right: 1px solid $primaryColor;
-                }
-              }
-              .third__step {
-                background-color: $primaryColor;
               }
             }
           }
-          .right__section {
-            padding-left: 20px;
-            position: relative;
-            .world__map {
-              width: 100%;
-            }
-            .loupe__img {
-              position: absolute;
-              top: 206px;
-              right: 0;
-              width: 214px;
-              filter: drop-shadow(rgba(0, 0, 0, 0.6) -3px 29px 11px);
-              clip-path: inset(0 0px -50px -28px);
-            }
-          }
-          .what__buy {
-            width: 50%;
-            margin-top: 30px;
-            h5 {
-              font-weight: 700;
-              margin-bottom: 1rem;
-            }
-            p {
-              font-size: 14px;
-              color: #000;
+        }
+      }
+      .what__buy__section {
+        padding: 40px 0;
+        border-bottom: 2px solid #909090;
+        // .guide {
+        //   border-top: 2px solid #6b6b6b;
+        //   border-bottom: 2px solid #6b6b6b;
+        //   .btn__heading {
+        //     display: flex;
+        //     align-items: center;
+        //     font-family: sans-serif;
+        //     padding: 25px 60px;
+        //     margin: auto;
+        //     button {
+        //       width: 30%;
+        //       border: 0;
+        //       background-color: #7250ba;
+        //       color: #fff;
+        //       line-height: 18px;
+        //       outline: none;
+        //       border-radius: 40px;
+        //       padding: 20px 25px;
+        //       .main__text {
+        //         text-transform: uppercase;
+        //         font-weight: 700;
+        //       }
+        //       .sub__text {
+        //         font-family: "Inter Thin";
+        //         display: block;
+        //       }
+        //     }
+        //     button:hover {
+        //       background-color: #4d367b;
+        //     }
+        //     h4 {
+        //       font-weight: 700;
+        //       color: #7253c1;
+        //       margin-left: 40px;
+        //       margin-bottom: 0;
+        //     }
+        //   }
+        // }
+        .info__section {
+          .left__section {
+            .what__buy {
+              h1 {
+                color: #243e63;
+                font-family: "Inter Boldest";
+                font-weight: 700;
+                margin: 15px 0;
+                span {
+                  color: $primaryColor;
+                }
+              }
+              h6 {
+                color: $primaryColor;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                margin: 0;
+                font-size: 16px;
+              }
+              p {
+                font-size: 14px;
+                color: #718096;
+                font-family: "Inter Medium";
+                font-weight: 500;
+                line-height: 1.5rem;
+              }
+              button {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border: 0;
+                background-color: #7250ba;
+                color: #fff;
+                line-height: 18px;
+                outline: none;
+                border-radius: 40px;
+                padding: 10px 25px;
+                .main__text {
+                  text-transform: uppercase;
+                  font-weight: 700;
+                }
+                .sub__text {
+                  font-family: "Inter Thin";
+                  display: block;
+                }
+              }
+              button:hover {
+                background-color: #4d367b;
+              }
             }
           }
           .diamond__range {
             margin-top: 2rem;
-            font-family: sans-serif;
-            h6 {
-              font-size: 14px;
-              color: #000;
-              font-weight: 700;
-              margin-bottom: 0.2rem;
-            }
-            .left__section {
-              table {
-                width: 70%;
-              }
-            }
             .right__section {
-              table {
-                width: 95%;
+              text-align: center;
+              .first__row__block {
+                display: flex;
+                justify-content: space-around;
               }
-            }
-            .left__section,
-            .right__section {
-              table {
-                margin: 0 auto;
-                td {
-                  border: 1px solid #7b7b7b;
-                  min-width: 60px;
-                  max-width: 60px;
-                  padding: 5px;
+              .table__block {
+                margin-bottom: 20px;
+                color: #243e63;
+                h6 {
+                  font-size: 14px;
                   font-weight: 700;
-                  font-size: 12px;
-                  height: 50px;
+                  margin-bottom: 0.5rem;
+                  letter-spacing: 0.05em;
+                }
+                table {
+                  width: auto;
+                  margin: 0 auto;
+                  td {
+                    color: #718096;
+                    border: 1px solid #7b7b7b;
+                    min-width: 60px;
+                    padding: 10px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    height: 50px;
+                  }
                 }
               }
             }

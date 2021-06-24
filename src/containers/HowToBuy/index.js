@@ -2,6 +2,7 @@ import React from "react";
 import "./index.scss";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import GetAppIcon from "@material-ui/icons/GetApp";
 // import Paper from "@material-ui/core/Paper";
 // import { Link } from "react-router-dom";
 
@@ -55,7 +56,9 @@ function HowToBuy() {
               </Grid>
               <Grid item xs={6} className="text-left right__section">
                 <h6>STEPS</h6>
-                <h5>How we buy:</h5>
+                <h1>
+                  How we <span>buy</span>
+                </h1>
                 <div className="how__content">
                   <p>
                     We buy large volumes of graded and ungraded natural diamonds
@@ -64,30 +67,37 @@ function HowToBuy() {
                   </p>
                   <div className="buy__steps">
                     <div className="first__step">
-                      <span className="step__count">1</span>
-                      <span className="step">
-                        Upload a confidential list of diamonds with your price
-                      </span>
+                      <div className="step__count">01</div>
+                      <div className="step">
+                        <h3>Upload</h3>
+                        <span>
+                          Upload a confidential list of diamonds with your price
+                        </span>
+                      </div>
                     </div>
                     <div className="second__step">
-                      <span className="step__count">2</span>
-                      <span className="step">
-                        Get an instant purchase order
-                      </span>
+                      <div className="step__count">02</div>
+                      <div className="step">
+                        <h3>Order</h3>
+                        <span>Get an instant purchase order</span>
+                      </div>
                     </div>
                     <div className="third__step">
-                      <span className="step__count">3</span>
-                      <span className="step">
-                        Deliver to a local IGI gem lab, we pay upon inspection
-                      </span>
+                      <div className="step__count">03</div>
+                      <div className="step">
+                        <h3>Deliver</h3>
+                        <span>
+                          Deliver to a local IGI gem lab, we pay upon inspection
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </Grid>
             </Grid>
           </div>
-          <section className="top__section">
-            <div className="guide">
+          <section className="what__buy__section">
+            {/* <div className="guide">
               <div className="btn__heading">
                 <button className="btn">
                   <span className="main__text">DOWNLOAD</span>
@@ -98,130 +108,98 @@ function HowToBuy() {
                   Asked Questions
                 </h4>
               </div>
-            </div>
+            </div> */}
             <div className="info__section">
-              <h2>HOW WE BUY DIAMONDS</h2>
-              <Grid container spacing={0}>
-                <Grid item xs={4} className="text-left left__section">
-                  <h5>How we buy:</h5>
-                  <div className="how__content">
+              <Grid container spacing={3} className="diamond__range">
+                <Grid item xs={5} className="left__section">
+                  <div className="what__buy">
+                    <h6>RULES</h6>
+                    <h1>
+                      What we <span>buy</span>
+                    </h1>
                     <p>
-                      We buy large volumes of graded and ungraded natural
-                      diamonds from established vendors, for a regulated
-                      commodity, using an automated price discovery process.
+                      Diamonds above $750 per carat must be GIA Graded. We buy
+                      graded and ungraded diamonds below $750 per carat.
                     </p>
-                    <div className="buy__steps">
-                      <div className="first__step">
-                        <span className="step__count">1</span>
-                        <span className="step">
-                          Upload a confidential list of diamonds with your price
-                        </span>
+                    <button className="btn">
+                      <span>
+                        <GetAppIcon />
+                      </span>
+                      <div>
+                        <span className="main__text">DOWNLOAD</span>
+                        <span className="sub__text">PDF GUIDE</span>
                       </div>
-                      <div className="second__step">
-                        <span className="step__count">2</span>
-                        <span className="step">
-                          Get an instant purchase order
-                        </span>
+                    </button>
+                  </div>
+                </Grid>
+                <Grid item xs={7} className="right__section">
+                  <div className="first__row__block">
+                    <div className="carat__weight table__block">
+                      <h6>CARAT WEIGHT</h6>
+                      <div className="weight__chart">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>0.21</td>
+                              <td>to</td>
+                              <td>0.75</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
-                      <div className="third__step">
-                        <span className="step__count">3</span>
-                        <span className="step">
-                          Deliver to a local IGI gem lab, we pay upon inspection
-                        </span>
+                    </div>
+                    <div className="cut__weight table__block">
+                      <h6>GIA CUT SCALE</h6>
+                      <div className="cut__weight__chart">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>EXCELLENT</td>
+                              <td>VERY GOOD</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
-                </Grid>
-                <Grid item xs={8} className="right__section">
-                  <img
-                    src="/Images/map.png"
-                    alt="world map"
-                    data-aos={"fade-left"}
-                    className="world__map"
-                  />
-                  <img
-                    src="/Images/loupe.png"
-                    data-aos={"zoom-in"}
-                    data-aos-delay="500"
-                    alt="loupe"
-                    className="loupe__img"
-                  />
-                </Grid>
-              </Grid>
-              <div className="what__buy">
-                <h5>What we buy:</h5>
-                <p>
-                  Diamonds above $750 per carat must be GIA Graded. We buy
-                  graded and ungraded diamonds below $750 per carat.
-                </p>
-              </div>
-              <Grid container spacing={0} className="diamond__range">
-                <Grid item xs={4} className="left__section text-center">
-                  <h6>CARAT WEIGHT</h6>
-                  <div className="weight__chart">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>0.21</td>
-                          <td>to</td>
-                          <td>0.75</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div className="carat__color table__block">
+                    <h6>GIA COLOR SCALE</h6>
+                    <div className="color__chart">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>D</td>
+                            <td>E</td>
+                            <td>F</td>
+                            <td>G</td>
+                            <td>H</td>
+                            <td>I</td>
+                            <td>J</td>
+                            <td>K</td>
+                            <td>L</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
-                </Grid>
-                <Grid item xs={8} className="right__section text-center">
-                  <h6>GIA COLOR SCALE</h6>
-                  <div className="color__chart">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>D</td>
-                          <td>E</td>
-                          <td>F</td>
-                          <td>G</td>
-                          <td>H</td>
-                          <td>I</td>
-                          <td>J</td>
-                          <td>K</td>
-                          <td>L</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </Grid>
-              </Grid>
-              <Grid container spacing={0} className="diamond__range">
-                <Grid item xs={4} className="left__section text-center">
-                  <h6>GIA CUT SCALE</h6>
-                  <div className="weight__chart">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>EXCELLENT</td>
-                          <td>VERY GOOD</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </Grid>
-                <Grid item xs={8} className="right__section text-center">
-                  <h6>GIA CLARITY SCALE</h6>
-                  <div className="color__chart">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>FLAWLESS</td>
-                          <td>INTERNALL FLAWLESS</td>
-                          <td>VVS1</td>
-                          <td>VVS2</td>
-                          <td>VS1</td>
-                          <td>VS2</td>
-                          <td>SI1</td>
-                          <td>SI2</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div className="clarity__block table__block">
+                    <h6>GIA CLARITY SCALE</h6>
+                    <div className="color__chart">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>FLAWLESS</td>
+                            <td>INTERNALL FLAWLESS</td>
+                            <td>VVS1</td>
+                            <td>VVS2</td>
+                            <td>VS1</td>
+                            <td>VS2</td>
+                            <td>SI1</td>
+                            <td>SI2</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </Grid>
               </Grid>
