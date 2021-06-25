@@ -12,13 +12,22 @@ const useStyles = makeStyles(() => ({
     "& .MuiAccordionSummary-content": {
       margin: 0,
     },
+    "& .MuiCollapse-wrapper": {
+      padding: "15px 0",
+    },
     "& .MuiButtonBase-root": {
       padding: 0,
+    },
+    "& .MuiAccordionSummary-root": {
+      padding: "1rem",
     },
     "& .MuiSvgIcon-root": {
       width: "1.2em",
       height: "1.2em",
       color: "#2d3748",
+    },
+    "& .MuiCollapse-container": {
+      borderTop: "1px solid #7c8ba1",
     },
   },
 }));

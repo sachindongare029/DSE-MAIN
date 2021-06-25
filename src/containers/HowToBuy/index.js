@@ -204,7 +204,7 @@ function HowToBuy() {
                 <div className="top__background"></div>
                 <div className="feature__card">
                   <div className="image__section">
-                    <h5>We Buy or Bid Automatically</h5>
+                    <h3>We Buy or Bid Automatically</h3>
                     <img src="/Images/desktop.jpg" alt="desktop" />
                   </div>
                   <div className="info__section">
@@ -223,7 +223,7 @@ function HowToBuy() {
                 <div className="top__background"></div>
                 <div className="feature__card">
                   <div className="image__section">
-                    <h5>You Deliver Locally</h5>
+                    <h3>You Deliver Locally</h3>
                     <img src="/Images/scooter.jpg" alt="scooter" />
                   </div>
                   <div className="info__section">
@@ -242,7 +242,7 @@ function HowToBuy() {
                 <div className="top__background"></div>
                 <div className="feature__card">
                   <div className="image__section">
-                    <h5>COD, No Returns</h5>
+                    <h3>COD, No Returns</h3>
                     <img src="/Images/cash.jpg" alt="cash" />
                   </div>
                   <div className="info__section">
@@ -262,7 +262,7 @@ function HowToBuy() {
                 <div className="top__background"></div>
                 <div className="feature__card">
                   <div className="image__section">
-                    <h5>NO NEGOTIATING</h5>
+                    <h3>NO NEGOTIATING</h3>
                     <img src="/Images/yoga.jpg" alt="yoga" />
                   </div>
                   <div className="info__section">

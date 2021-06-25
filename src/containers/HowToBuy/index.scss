@@ -5,13 +5,6 @@ $primaryColor: #7250ba;
     .page__body {
       background-color: #fff;
       .how__buy__overview {
-        h2 {
-          margin: 25px 0;
-          color: $primaryColor;
-          text-align: center;
-          font-family: sans-serif;
-          font-weight: 700;
-        }
         .left__section {
           position: relative;
           .map__section {
@@ -32,20 +25,9 @@ $primaryColor: #7250ba;
           }
         }
         .right__section {
+          h1,
           h6 {
-            color: $primaryColor;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            margin: 0;
-          }
-          h1 {
-            font-weight: 700;
-            margin: 15px 0;
-            font-family: "Inter Boldest";
-            color: #243e63;
-            span {
-              color: $primaryColor;
-            }
+            text-align: left;
           }
           .how__content {
             p {
@@ -99,21 +81,9 @@ $primaryColor: #7250ba;
         .info__section {
           .left__section {
             .what__buy {
-              h1 {
-                color: #243e63;
-                font-family: "Inter Boldest";
-                font-weight: 700;
-                margin: 15px 0;
-                span {
-                  color: $primaryColor;
-                }
-              }
+              h1,
               h6 {
-                color: $primaryColor;
-                font-weight: 700;
-                letter-spacing: 0.1em;
-                margin: 0;
-                font-size: 16px;
+                text-align: left;
               }
               p {
                 font-size: 14px;
@@ -161,6 +131,7 @@ $primaryColor: #7250ba;
                 margin-bottom: 20px;
                 color: #243e63;
                 h6 {
+                  color: #243e63;
                   font-size: 14px;
                   font-weight: 700;
                   margin-bottom: 0.5rem;
@@ -186,24 +157,6 @@ $primaryColor: #7250ba;
       }
       .dse__specialities {
         padding: 0 60px;
-        h6 {
-          text-align: center;
-          color: $primaryColor;
-          font-weight: 700;
-          letter-spacing: 0.1em;
-          margin: 0;
-        }
-        h1 {
-          text-align: center;
-          font-family: "Inter Boldest";
-          letter-spacing: 0.025em;
-          color: #243e63;
-          font-size: 44px;
-          margin: 20px 0;
-          span {
-            color: $primaryColor;
-          }
-        }
         .dse__features {
           padding: 20px 0;
           .top__background {
@@ -280,13 +233,13 @@ $primaryColor: #7250ba;
         }
         .dse__processes {
           .process__accordion__item {
-            background-color: #edf2f7;
             border-radius: 8px;
             margin-top: 1.25rem;
-            padding: 0.7rem 2.5rem;
-            box-shadow: none;
+            padding: 0;
+            // box-shadow: none;
+            // border: 1px solid #7c8ba1;
             .accordion__heading {
-              padding: 0;
+              // padding: 0;
               min-height: 35px;
               h6 {
                 color: #1a202c;
@@ -300,6 +253,7 @@ $primaryColor: #7250ba;
               color: #1a202c;
               ul {
                 margin: 0;
+                color: $primaryColor;
               }
             }
           }

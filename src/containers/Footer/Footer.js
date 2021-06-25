@@ -26,8 +26,8 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className={`container ${classes.root}`}>
-        <Grid container className="footer__container" spacing={3}>
+      <div className={`${classes.root}`}>
+        <Grid container className="footer__container" spacing={0}>
           <Grid item xs={4} className="footer__left__section">
             <Link to="/" replace>
               <img
