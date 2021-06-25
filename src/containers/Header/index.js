@@ -16,16 +16,16 @@ function Header() {
           </Link>
         </div>
         <ul className="right__sub--section">
-          <li>
+          {/* <li>
             <Link
-              to={`/`}
+              to={`/#/`}
               smooth
               activeStyle={{ fontWeight: "bold" }}
               className="menu__item"
             >
               DSE Home
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to={`/#how-we-buy-diamonds`}

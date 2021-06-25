@@ -255,6 +255,26 @@ $primaryColor: #7250ba;
                 margin: 0;
                 color: $primaryColor;
               }
+              // ul {
+              //   list-style: none;
+              //   padding-left: 0;
+              // }
+              // ul li {
+              //   position: relative;
+              //   padding-left: 20px;
+              // }
+              // ul li:before {
+              //   content: "";
+              //   width: 10px;
+              //   height: 10px;
+              //   position: absolute;
+              //   background-image: url("/icons/bullets.png");
+              //   background-size: cover;
+              //   background-position: center;
+              //   left: 0;
+              //   top: 50%;
+              //   transform: translateY(-50%);
+              // }
             }
           }
           .process__accordion__item::before {

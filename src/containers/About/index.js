@@ -31,6 +31,7 @@ export default function About() {
   return (
     <div className={`dse__about ${classes.root}`} id="dse-about">
       <div className="about__page__body">
+        <h6>INFORMATION</h6>
         <h1>
           ABOUT <span>US</span>
         </h1>
@@ -92,7 +93,7 @@ export default function About() {
           </div>
           <Grid container spacing={0} className="dse__notes">
             <Grid item xs={12}>
-              <h3>Important:</h3>
+              <h3>NOTE:</h3>
               <div className="note__conatainer">
                 <div className="first__note">
                   <Alert severity="warning">
