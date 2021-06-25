@@ -7,7 +7,7 @@ function Header() {
     <header>
       <section className="top__section">
         <div className="left__logo__section">
-          <Link to="/" replace>
+          <Link to="/#" smooth>
             <img
               src="/logo/DSELogo.png"
               alt="company-logo"

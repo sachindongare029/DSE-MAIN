@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { NavLink as Link } from "react-router-dom";
+import { NavHashLink as Link } from "react-router-hash-link";
 import Grid from "@material-ui/core/Grid";
 import "./Footer.scss";
 
@@ -29,7 +29,7 @@ export default function Footer() {
       <div className={`${classes.root}`}>
         <Grid container className="footer__container" spacing={0}>
           <Grid item xs={4} className="footer__left__section">
-            <Link to="/" replace>
+            <Link to="/#" smooth>
               <img
                 className="company__logo"
                 src="/logo/DSELogo.png"
@@ -42,17 +42,17 @@ export default function Footer() {
               <Grid item xs={6}>
                 <ul className="p-0 m-0">
                   <li>
-                    <Link to={`/home`} replace>
+                    <Link to={`/#`} smooth>
                       DSE HOME
                     </Link>
                   </li>
                   <li>
-                    <Link to={`/how-to-buy`} replace>
+                    <Link to={`/#how-we-buy-diamonds`} smooth>
                       HOW WE BUY DIAMONDS
                     </Link>
                   </li>
                   <li>
-                    <Link to={`/about`} replace>
+                    <Link to={`/#dse-about`} smooth>
                       ABOUT DIAMOND STANDARD
                     </Link>
                   </li>
