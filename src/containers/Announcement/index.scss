@@ -19,6 +19,7 @@ $primaryColor: #7250ba;
   }
   .ann__content {
     h2 {
+      font-family: "Times New Roman";
       display: flex;
       flex-direction: column;
       font-weight: 700;
@@ -27,16 +28,16 @@ $primaryColor: #7250ba;
       color: #243e63;
     }
     .vendors__notice__block {
-      color: $primaryColor;
+      color: #243e63;
       padding: 0 20px;
       .date__block {
         margin-top: 10px;
+        font-size: 34px;
         .date__label {
-          font-size: 16px;
-          font-weight: 600;
+          font-family: "Benne Regular";
         }
         .date__value {
-          font-size: 18px;
+          font-family: "Tangerine Bold";
           font-weight: 700;
         }
       }

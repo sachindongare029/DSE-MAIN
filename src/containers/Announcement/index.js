@@ -5,14 +5,14 @@ import Grid from "@material-ui/core/Grid";
 import Dialog from "@material-ui/core/Dialog";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import moment from "moment";
-import "moment-timezone";
+// import moment from "moment";
+// import "moment-timezone";
 import "./index.scss";
 
 const useStyles = makeStyles(() => ({
   root: {
     "& .MuiBackdrop-root": {
-      opacity: "0.9 !important",
+      opacity: "0.8 !important",
       backgroundColor: "#fff",
     },
     "& .MuiPaper-root ": {
@@ -31,23 +31,23 @@ export default function Announcement({ show, handleCloseAnn }) {
   const Announcement = useSelector((state) => state.Announcement);
 
   const renderAnnouncement = () => {
-    let buyingAnn = Announcement.buying_announcement;
+    // let buyingAnn = Announcement.buying_announcement;
     let generalAnn = Announcement.site_general_announcement;
-    let annDate;
+    // let annDate;
     if (generalAnn && generalAnn.setting_value) {
-      if (buyingAnn && buyingAnn.setting_value && buyingAnn.setting_details) {
-        annDate = new Date(buyingAnn.setting_details);
-      }
+      // if (buyingAnn && buyingAnn.setting_value && buyingAnn.setting_details) {
+      //   annDate = new Date(buyingAnn.setting_details);
+      // }
       return (
         <div className="vendors__notice__block">
-          <div className="date__block notice__next__purchase">
+          {/* <div className="date__block notice__next__purchase">
             <div className="date__label">Next Purchase:</div>
             <div className="date__value">{`${moment(annDate).format(
               "LL"
             )} at ${moment(annDate)
               .tz("America/New_York")
               .format("ha z")}`}</div>
-          </div>
+          </div> */}
           <div className="date__block notice__inv__due">
             <div className="date__label">{generalAnn.title}</div>
             <div className="date__value">{generalAnn.setting_details}</div>
@@ -76,7 +76,7 @@ export default function Announcement({ show, handleCloseAnn }) {
         </span>
       </DialogTitle>
       <DialogContent className="ann__content">
-        <h2>Diamond Standard Exchange (DSE) for registered vendors</h2>
+        <h2>Diamond Standard Exchange (DSE)</h2>
         <Grid container spacing={0}>
           <Grid item xs={12} className="text-center">
             {renderAnnouncement()}

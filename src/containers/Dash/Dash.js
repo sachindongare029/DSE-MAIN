@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ScrollToTop from "react-scroll-to-top";
 import { BsFillChatDotsFill } from "react-icons/bs";
 import NavigationIcon from "@material-ui/icons/Navigation";
@@ -18,21 +18,25 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function getSessionStorageOrDefault() {
-  const stored = sessionStorage.getItem("firstVisit");
-  if (stored === null) {
-    sessionStorage.setItem("firstVisit", true);
-    return true;
-  } else {
-    sessionStorage.setItem("firstVisit", false);
-    return false;
-  }
-}
+// function getSessionStorageOrDefault() {
+//   const stored = sessionStorage.getItem("firstVisit");
+//   if (stored === null) {
+//     sessionStorage.setItem("firstVisit", true);
+//     return true;
+//   } else {
+//     sessionStorage.setItem("firstVisit", false);
+//     return false;
+//   }
+// }
 
 function Dash() {
   const classes = useStyles();
-  const [showAnn, setShowAnn] = useState(getSessionStorageOrDefault());
+  const [showAnn, setShowAnn] = useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
+
+  useEffect(() => {
+    setShowAnn(true);
+  }, []);
 
   const handleScroll = () => {
     History.push("/");
