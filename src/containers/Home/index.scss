@@ -1,166 +1,133 @@
 $primaryColor: #7250ba;
 
 .home__page__container {
-  .vendors__notice__block {
-    color: $primaryColor;
-    background-color: #fff;
-    padding: 20px;
-    font-family: sans-serif;
-    h2 {
-      font-weight: 700;
-      margin: 0;
-    }
-    .date__block {
-      margin-top: 25px;
-      .date__label {
-        font-size: 16px;
-        font-weight: 600;
-      }
-      .date__value {
-        font-size: 18px;
-        font-weight: 700;
-      }
-    }
-  }
-  .actions__block {
-    margin-top: 25px;
-    font-family: sans-serif;
-    .register--btn,
-    .login--btn {
-      background-color: $primaryColor;
-      border-radius: 2px;
-      color: #fff;
-      width: 75%;
-      .main__text {
-        text-transform: uppercase;
-        font-weight: 700;
-      }
-      .sub__text {
-        display: block;
-      }
-    }
-  }
   .middle__section {
-    margin-top: 20px;
-    padding: 3rem 0;
+    padding: 3rem 0 4rem 0;
     background-color: white;
     p {
       text-align: justify;
       margin-bottom: 20px;
       color: #364361;
     }
-    .middle__left {
-      h1 {
-        text-align: left;
-        margin-bottom: 30px;
+    .dse__overview__section {
+      border-bottom: 1px solid #7c8ba1;
+      padding: 1rem 0 4rem 0;
+      .middle__left {
+        h1 {
+          text-align: left;
+          margin-bottom: 30px;
+        }
       }
     }
-    .feature__container {
-      width: 70%;
-      padding: 4rem 0;
-      h5,
-      h2 {
-        font-weight: 700;
-        text-align: center;
-        color: $primaryColor;
-        letter-spacing: 0.1em;
-        font-size: 1.1rem;
-      }
-      h2 {
-        font-family: "Inter Boldest";
-        letter-spacing: 0.025em;
-        color: #243e63;
-        font-size: 44px;
-        margin: 20px 0;
-        span {
-          color: $primaryColor;
-        }
-      }
-      p {
-        font-family: "Inter Medium";
-        width: 75%;
-        margin: 0 auto;
-        font-size: 18px;
-        color: #7c8ba1;
-      }
-      .steps__cards {
-        h5 {
-          color: #243e63;
-          text-align: center;
-          width: 100%;
-          margin: 30px auto;
-          letter-spacing: 0.03em;
-          padding: 0 30px;
-        }
-        .step {
-          .step__card {
-            display: flex;
-            gap: 15px;
-            padding: 15px;
-            border: 1px solid transparent;
-            height: 100%;
-            .step__count {
-              display: flex;
-              width: 70px;
-              height: 55px;
-              border: 1px solid #a7a7a7;
-              border-radius: 999px;
-              justify-content: center;
-              align-items: center;
-              color: #7250ba;
-              img {
-                width: 30px;
-                filter: brightness(50%) sepia(100) saturate(100) hue-rotate(266deg);
-              }
-            }
-            .step__info {
-              width: 90%;
-              text-align: left;
-              .title {
-                margin-top: 1rem;
-                letter-spacing: 0.025em;
-                font-weight: 700;
-                font-size: 1.3rem;
-                line-height: 1;
-                color: #243e63;
-              }
-              p {
-                width: 100%;
-                margin: 10px 0 0 0;
-                font-size: 16px;
-                color: #7c8ba1;
-              }
-            }
-          }
-          .step__card:hover {
-            transition: all 0.15s;
-            border: 1px solid #e2e2e2;
-            border-radius: 20px;
-            box-shadow: 6px 6px 5px 0px rgba(125, 125, 125, 0.75);
-          }
-        }
-      }
-      .price__ann {
+    .dse__features {
+      border-bottom: 1px solid #7c8ba1;
+      .feature__container {
         width: 70%;
-        margin: 20px auto;
-        text-align: center;
-        h5 {
-          color: #243e63;
+        padding: 4rem 0;
+        h5,
+        h2 {
+          font-weight: 700;
           text-align: center;
-          margin: 30px auto;
-          letter-spacing: 0.03em;
+          color: $primaryColor;
+          letter-spacing: 0.1em;
+          font-size: 1.1rem;
         }
-        a {
-          display: inline-block;
-          text-decoration: none;
-          outline: none;
-          color: #fff;
-          background-color: #7250ba;
-          border-radius: 40px;
-          padding: 10px 25px;
+        h2 {
+          font-family: "Inter Boldest";
+          letter-spacing: 0.025em;
+          color: #243e63;
+          font-size: 44px;
+          margin: 20px 0;
+          span {
+            color: $primaryColor;
+          }
         }
-        a:hover {
-          background-color: #4d367b;
+        p {
+          font-family: "Inter Medium";
+          width: 75%;
+          margin: 0 auto;
+          font-size: 18px;
+          color: #7c8ba1;
+        }
+        .steps__cards {
+          h5 {
+            color: #243e63;
+            text-align: center;
+            width: 100%;
+            margin: 30px auto;
+            letter-spacing: 0.03em;
+            padding: 0 30px;
+          }
+          .step {
+            .step__card {
+              display: flex;
+              gap: 15px;
+              padding: 15px;
+              border: 1px solid transparent;
+              height: 100%;
+              .step__count {
+                display: flex;
+                width: 70px;
+                height: 55px;
+                border: 1px solid #a7a7a7;
+                border-radius: 999px;
+                justify-content: center;
+                align-items: center;
+                color: #7250ba;
+                img {
+                  width: 30px;
+                  filter: brightness(50%) sepia(100) saturate(100) hue-rotate(266deg);
+                }
+              }
+              .step__info {
+                width: 90%;
+                text-align: left;
+                .title {
+                  margin-top: 1rem;
+                  letter-spacing: 0.025em;
+                  font-weight: 700;
+                  font-size: 1.3rem;
+                  line-height: 1;
+                  color: #243e63;
+                }
+                p {
+                  width: 100%;
+                  margin: 10px 0 0 0;
+                  font-size: 16px;
+                  color: #7c8ba1;
+                }
+              }
+            }
+            .step__card:hover {
+              transition: all 0.15s;
+              border: 1px solid #e2e2e2;
+              border-radius: 20px;
+              box-shadow: 6px 6px 5px 0px rgba(125, 125, 125, 0.75);
+            }
+          }
+        }
+        .price__ann {
+          width: 70%;
+          margin: 20px auto 0;
+          text-align: center;
+          h5 {
+            color: #243e63;
+            text-align: center;
+            margin: 30px auto;
+            letter-spacing: 0.03em;
+          }
+          a {
+            display: inline-block;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #7250ba;
+            border-radius: 40px;
+            padding: 10px 25px;
+          }
+          a:hover {
+            background-color: #4d367b;
+          }
         }
       }
     }

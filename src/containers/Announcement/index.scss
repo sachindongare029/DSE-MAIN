@@ -1,0 +1,62 @@
+$primaryColor: #7250ba;
+
+.announcement__modal {
+  .ann__title {
+    h2 {
+      span {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        button {
+          outline: none;
+          padding: 0;
+        }
+        button:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .ann__content {
+    h2 {
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+      margin: 0;
+      text-align: center;
+      color: #243e63;
+    }
+    .vendors__notice__block {
+      color: $primaryColor;
+      padding: 0 20px;
+      .date__block {
+        margin-top: 10px;
+        .date__label {
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .date__value {
+          font-size: 18px;
+          font-weight: 700;
+        }
+      }
+    }
+    .actions__block {
+      padding-top: 25px;
+      .register--btn,
+      .login--btn {
+        background-color: $primaryColor;
+        border-radius: 40px;
+        color: #fff;
+        width: 75%;
+        .main__text {
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+        .sub__text {
+          display: block;
+        }
+      }
+    }
+  }
+}

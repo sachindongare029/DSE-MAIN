@@ -35,7 +35,7 @@ function HowToBuy() {
       <div className={`how__to__page__container ${classes.root}`}>
         <div className="page__body">
           <div className="how__buy__overview">
-            <Grid container spacing={5}>
+            <Grid container spacing={2}>
               <Grid item xs={6} className="left__section">
                 <div className="map__section">
                   <img
@@ -83,7 +83,7 @@ function HowToBuy() {
                         <span>Get an instant purchase order</span>
                       </div>
                     </div>
-                    <div className="third__step">
+                    <div className="third__step mb-0">
                       <div className="step__count">03</div>
                       <div className="step">
                         <h3>Deliver</h3>
@@ -171,7 +171,7 @@ function HowToBuy() {
                       </table>
                     </div>
                   </div>
-                  <div className="clarity__block table__block">
+                  <div className="clarity__block table__block mb-0">
                     <h6>GIA CLARITY SCALE</h6>
                     <div className="color__chart">
                       <table>

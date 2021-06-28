@@ -1,5 +1,5 @@
 header {
-  font-family: sans-serif;
+  // font-family: sans-serif;
   padding: 1rem 3rem;
   .top__section {
     display: flex;
@@ -49,6 +49,9 @@ header {
     }
     .dse__register--btn:hover {
       background-color: #4d367b;
+    }
+    .dse__register--btn:focus {
+      box-shadow: none;
     }
   }
 }

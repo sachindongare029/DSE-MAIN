@@ -41,11 +41,11 @@ export default function Footer() {
             <Grid container spacing={3}>
               <Grid item xs={6}>
                 <ul className="p-0 m-0">
-                  <li>
+                  {/* <li>
                     <Link to={`/#`} smooth>
                       DSE HOME
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to={`/#how-we-buy-diamonds`} smooth>
                       HOW WE BUY DIAMONDS
@@ -61,10 +61,22 @@ export default function Footer() {
               <Grid item xs={6} className="text-right">
                 <ul className="p-0 m-0">
                   <li>
-                    <a href="https://sell.thedse.co/#/login">LOGIN</a>
+                    <a
+                      href="https://sell.thedse.co/#/login"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      LOGIN
+                    </a>
                   </li>
                   <li>
-                    <a href="https://sell.thedse.co/#/register">REGISTER</a>
+                    <a
+                      href="https://sell.thedse.co/#/register"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      REGISTER
+                    </a>
                   </li>
                 </ul>
               </Grid>
@@ -73,7 +85,13 @@ export default function Footer() {
         </Grid>
         <div className="d-flex justify-content-between mt-2 privacy__footer">
           <span>&#169; 2021 Diamond Standard Exchange Ltd.</span>
-          <span>Privacy Policy</span>
+          <a
+            href="https://diamondstandard.co/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Privacy Policy
+          </a>
         </div>
       </div>
     </footer>

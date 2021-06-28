@@ -5,6 +5,8 @@ $primaryColor: #7250ba;
     .page__body {
       background-color: #fff;
       .how__buy__overview {
+        border-bottom: 1px solid #7c8ba1;
+        padding-bottom: 4rem;
         .left__section {
           position: relative;
           .map__section {
@@ -77,7 +79,8 @@ $primaryColor: #7250ba;
         }
       }
       .what__buy__section {
-        padding: 40px 0;
+        padding: 4rem 0;
+        border-bottom: 1px solid #7c8ba1;
         .info__section {
           .left__section {
             .what__buy {
@@ -120,7 +123,6 @@ $primaryColor: #7250ba;
             }
           }
           .diamond__range {
-            margin-top: 2rem;
             .right__section {
               text-align: center;
               .first__row__block {
@@ -156,7 +158,8 @@ $primaryColor: #7250ba;
         }
       }
       .dse__specialities {
-        padding: 0 60px;
+        padding: 4rem 6rem;
+        border-bottom: 1px solid #7c8ba1;
         .dse__features {
           padding: 20px 0;
           .top__background {
@@ -204,7 +207,8 @@ $primaryColor: #7250ba;
         }
       }
       .dse__features__chart {
-        margin: 4rem 0;
+        padding: 4rem 0;
+        border-bottom: 1px solid #7c8ba1;
         h6 {
           text-align: center;
           color: $primaryColor;
@@ -255,26 +259,26 @@ $primaryColor: #7250ba;
                 margin: 0;
                 color: $primaryColor;
               }
-              // ul {
-              //   list-style: none;
-              //   padding-left: 0;
-              // }
-              // ul li {
-              //   position: relative;
-              //   padding-left: 20px;
-              // }
-              // ul li:before {
-              //   content: "";
-              //   width: 10px;
-              //   height: 10px;
-              //   position: absolute;
-              //   background-image: url("/icons/bullets.png");
-              //   background-size: cover;
-              //   background-position: center;
-              //   left: 0;
-              //   top: 50%;
-              //   transform: translateY(-50%);
-              // }
+              ul {
+                list-style: none;
+                padding-left: 0;
+              }
+              ul li {
+                position: relative;
+                padding-left: 25px;
+              }
+              ul li:before {
+                content: "";
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                background-image: url("/icons/bullets2.png");
+                background-size: cover;
+                background-position: center;
+                left: 0;
+                top: 14px;
+                transform: translateY(-50%);
+              }
             }
           }
           .process__accordion__item::before {

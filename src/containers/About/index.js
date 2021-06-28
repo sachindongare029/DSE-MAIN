@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import HighlightOffIcon from "@material-ui/icons/HighlightOff";
+// import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 import Alert from "@material-ui/lab/Alert";
 import "./index.scss";
 
@@ -35,85 +35,87 @@ export default function About() {
         <h1>
           ABOUT <span>US</span>
         </h1>
-        <div className="dse__working">
-          <h3 className="text-center">
-            How the Diamond Commodity Market Works
-          </h3>
-          <div className="dse__working__steps">
-            <div className="first__step">
-              <div className="step__count">
-                <span>01</span>
-              </div>
-              <div className="info__section">
-                <p>
-                  Diamond Standard is the primary dealer for diamond
-                  commodities. Like gold refiners, our job is to create and
-                  offer a fungible unit of trade. Refiners offer a kilo bar of
-                  0.999 purity, we offer Diamonds Standard Coins each containing
-                  equivalent gemological content.
-                </p>
-              </div>
-            </div>
-            <div className="second__step">
-              <div className="step__count">
-                <span>02</span>
-              </div>
-              <div className="info__section">
-                <p>
-                  As a market maker for loose diamonds, we bid on millions of
-                  diamond verietes, and force regular price discovery, by
-                  purchasing a public and statistically valid sample of
-                  diamonds. The diamond market tell us the cost.
-                </p>
-              </div>
-            </div>
-            <div className="third__step">
-              <div className="step__count">
-                <span>03</span>
-              </div>
-              <div className="info__section">
-                <p>
-                  As a primary dealer, we offer new Diamond Standard Coins
-                  (which take 30-40 days to deliver){" "}
-                  <strong>to consumers</strong> at a daily fix price determined
-                  by secondary market trading.
-                </p>
-                <p>
-                  We offer Coins <strong>to institutional investors</strong> via
-                  a sales desk.
-                </p>
-                <p>
-                  Approved <strong>market makers and brokers</strong> can
-                  participate in a weekly primary dealer auction, which
-                  establishes the discount such participants require in order to
-                  provide liquidity or distribution.
-                </p>
-              </div>
-            </div>
-          </div>
-          <Grid container spacing={0} className="dse__notes">
-            <Grid item xs={12}>
-              <h3>NOTE:</h3>
-              <div className="note__conatainer">
-                <div className="first__note">
-                  <Alert severity="warning">
-                    <span>
-                      We do not set the market price for the diamond
-                      commodities.
-                    </span>
-                  </Alert>
+        <div className="dse__working__block">
+          <div className="dse__working">
+            <h3 className="text-center">
+              How the Diamond Commodity Market Works
+            </h3>
+            <div className="dse__working__steps">
+              <div className="first__step">
+                <div className="step__count">
+                  <span>01</span>
                 </div>
-                <div className="second__note">
-                  <Alert severity="warning">
-                    <span>
-                      We do not participate in the secondary market (such as
-                      trading on exchanges)
-                    </span>
-                  </Alert>
+                <div className="info__section">
+                  <p>
+                    Diamond Standard is the primary dealer for diamond
+                    commodities. Like gold refiners, our job is to create and
+                    offer a fungible unit of trade. Refiners offer a kilo bar of
+                    0.999 purity, we offer Diamonds Standard Coins each
+                    containing equivalent gemological content.
+                  </p>
                 </div>
               </div>
+              <div className="second__step">
+                <div className="step__count">
+                  <span>02</span>
+                </div>
+                <div className="info__section">
+                  <p>
+                    As a market maker for loose diamonds, we bid on millions of
+                    diamond verietes, and force regular price discovery, by
+                    purchasing a public and statistically valid sample of
+                    diamonds. The diamond market tell us the cost.
+                  </p>
+                </div>
+              </div>
+              <div className="third__step">
+                <div className="step__count">
+                  <span>03</span>
+                </div>
+                <div className="info__section">
+                  <p>
+                    As a primary dealer, we offer new Diamond Standard Coins
+                    (which take 30-40 days to deliver){" "}
+                    <strong>to consumers</strong> at a daily fix price
+                    determined by secondary market trading.
+                  </p>
+                  <p>
+                    We offer Coins <strong>to institutional investors</strong>{" "}
+                    via a sales desk.
+                  </p>
+                  <p>
+                    Approved <strong>market makers and brokers</strong> can
+                    participate in a weekly primary dealer auction, which
+                    establishes the discount such participants require in order
+                    to provide liquidity or distribution.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <Grid container spacing={0} className="dse__notes">
+              <Grid item xs={12}>
+                <h3>NOTE:</h3>
+                <div className="note__conatainer">
+                  <div className="first__note">
+                    <Alert severity="warning">
+                      <span>
+                        We do not set the market price for the diamond
+                        commodities.
+                      </span>
+                    </Alert>
+                  </div>
+                  <div className="second__note">
+                    <Alert severity="warning">
+                      <span>
+                        We do not participate in the secondary market (such as
+                        trading on exchanges)
+                      </span>
+                    </Alert>
+                  </div>
+                </div>
+              </Grid>
             </Grid>
-          </Grid>
+          </div>
         </div>
         <div className="about__info">
           <Grid container spacing={8}>

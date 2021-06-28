@@ -1,85 +1,82 @@
 .dse__about {
-  .banner__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: -1;
-  }
   .about__page__body {
-    padding-top: 20px;
-    .dse__working {
-      width: 75%;
-      margin: 0 auto;
-      h3 {
-        margin: 3rem auto;
-      }
-      .dse__working__steps {
-        margin-top: 2rem;
-        .first__step,
-        .second__step,
-        .third__step {
-          display: flex;
-          align-items: flex-start;
-          .step__count {
-            width: 8%;
-            height: 100%;
-            padding: 5px 0;
+    padding-top: 4rem;
+    .dse__working__block {
+      padding-bottom: 4rem;
+      border-bottom: 1px solid #7c8ba1;
+      .dse__working {
+        width: 75%;
+        margin: 0 auto;
+        h3 {
+          margin: 3rem auto;
+        }
+        .dse__working__steps {
+          margin-top: 2rem;
+          .first__step,
+          .second__step,
+          .third__step {
             display: flex;
             align-items: flex-start;
-            font-size: 36px;
-            font-weight: 700;
-            text-align: left;
-            font-family: sans-serif;
-            opacity: 0.2;
-          }
-          .info__section {
-            padding: 10px;
-            width: 92%;
-            P {
-              font-family: "Inter medium";
-              color: #718096;
-              font-weight: 500;
-              font-size: 14px;
-              text-align: justify;
-              margin-bottom: 1rem;
+            .step__count {
+              width: 8%;
+              height: 100%;
+              padding: 5px 0;
+              display: flex;
+              align-items: flex-start;
+              font-size: 36px;
+              font-weight: 700;
+              text-align: left;
+              font-family: sans-serif;
+              opacity: 0.2;
+            }
+            .info__section {
+              padding: 10px;
+              width: 92%;
+              P {
+                font-family: "Inter medium";
+                color: #718096;
+                font-weight: 500;
+                font-size: 14px;
+                text-align: justify;
+                margin-bottom: 1rem;
+              }
             }
           }
         }
-      }
-      .dse__notes {
-        width: 100%;
-        margin: 0 auto;
-        h3 {
-          margin: 0 0 0.7rem 0;
-        }
-        .note__conatainer {
-          display: flex;
-          gap: 20px;
-          margin-top: 10px;
-          .first__note,
-          .second__note {
-            width: 45%;
-            border-radius: 6px;
-            padding: 10px 15px;
+        .dse__notes {
+          width: 100%;
+          margin: 0 auto;
+          h3 {
+            margin: 0 0 0.7rem 0;
+          }
+          .note__conatainer {
             display: flex;
-            align-items: center;
-            gap: 15px;
-            span {
-              font-family: "Inter medium";
-              color: #718096;
-              font-weight: 500;
-              font-size: 14px;
-              text-align: justify;
-              margin-bottom: 1rem;
+            gap: 20px;
+            margin-top: 10px;
+            .first__note,
+            .second__note {
+              width: 45%;
+              border-radius: 6px;
+              padding: 10px 15px;
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              span {
+                font-family: "Inter medium";
+                color: #718096;
+                font-weight: 500;
+                font-size: 14px;
+                text-align: justify;
+                margin-bottom: 1rem;
+              }
             }
           }
         }
       }
     }
     .about__info {
-      padding: 5rem 0;
+      padding: 4rem 0;
+      border-bottom: 1px solid #7c8ba1;
       .left__section {
         img {
           width: 100%;
@@ -113,7 +110,7 @@
       }
     }
     .dse__founder {
-      margin: 50px 0;
+      padding: 4rem 0;
       .founder__intro {
         h1 {
           margin-top: 0;

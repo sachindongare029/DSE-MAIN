@@ -8,7 +8,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 const useStyles = makeStyles(() => ({
   root: {
     width: "75%",
-    margin: "3rem auto",
+    margin: "3rem auto 0",
     "& .MuiAccordionSummary-content": {
       margin: 0,
     },
