@@ -8,7 +8,7 @@ $primaryColor: #7250ba;
         border-bottom: 1px solid #7c8ba1;
         padding-bottom: 4rem;
         @media (max-width: 767px) {
-          margin: 0 1rem 4rem;
+          // margin: 0 1rem 4rem;
         }
         .left__section {
           position: relative;
@@ -96,7 +96,7 @@ $primaryColor: #7250ba;
         border-bottom: 1px solid #7c8ba1;
         @media (max-width: 767px) {
           padding: 0;
-          margin: 0 1rem;
+          // margin: 0 1rem;
         }
         .info__section {
           .left__section {
@@ -171,7 +171,7 @@ $primaryColor: #7250ba;
                     font-size: 12px;
                     height: 50px;
                     @media (max-width: 767px) {
-                      min-width: 40px;
+                      min-width: 30px;
                       padding: 8px;
                     }
                   }
