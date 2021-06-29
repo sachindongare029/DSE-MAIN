@@ -7,12 +7,20 @@ $primaryColor: #7250ba;
       .how__buy__overview {
         border-bottom: 1px solid #7c8ba1;
         padding-bottom: 4rem;
+        @media (max-width: 767px) {
+          margin: 0 1rem 4rem;
+        }
         .left__section {
           position: relative;
           .map__section {
             display: flex;
             align-items: center;
             height: 100%;
+            padding-right: 20px;
+            @media (max-width: 767px) {
+              padding-right: 0px;
+              padding-bottom: 1rem;
+            }
             .world__map {
               width: 100%;
             }
@@ -23,6 +31,11 @@ $primaryColor: #7250ba;
               width: 160px;
               filter: drop-shadow(rgba(0, 0, 0, 0.6) -3px 29px 11px);
               clip-path: inset(0 0px -50px -28px);
+              @media (max-width: 767px) {
+                top: 160px;
+                right: 0;
+                width: 140px;
+              }
             }
           }
         }
@@ -81,9 +94,16 @@ $primaryColor: #7250ba;
       .what__buy__section {
         padding: 4rem 0;
         border-bottom: 1px solid #7c8ba1;
+        @media (max-width: 767px) {
+          padding: 0;
+          margin: 0 1rem;
+        }
         .info__section {
           .left__section {
             .what__buy {
+              @media (max-width: 767px) {
+                padding-bottom: 2rem;
+              }
               h1,
               h6 {
                 text-align: left;
@@ -150,7 +170,17 @@ $primaryColor: #7250ba;
                     font-weight: 700;
                     font-size: 12px;
                     height: 50px;
+                    @media (max-width: 767px) {
+                      min-width: 40px;
+                      padding: 8px;
+                    }
                   }
+                }
+              }
+              .table__block:last-child {
+                margin-bottom: 0;
+                @media (max-width: 767px) {
+                  margin-bottom: 20px;
                 }
               }
             }
@@ -184,6 +214,8 @@ $primaryColor: #7250ba;
               img {
                 width: 300px;
                 height: 170px;
+                max-width: 100%;
+                max-height: 100%;
               }
               h5 {
                 font-weight: 700;

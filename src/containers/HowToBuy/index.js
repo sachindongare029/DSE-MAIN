@@ -35,8 +35,8 @@ function HowToBuy() {
       <div className={`how__to__page__container ${classes.root}`}>
         <div className="page__body">
           <div className="how__buy__overview">
-            <Grid container spacing={2}>
-              <Grid item xs={6} className="left__section">
+            <Grid container spacing={0}>
+              <Grid item sm={6} xs={12} className="left__section">
                 <div className="map__section">
                   <img
                     src="/Images/map.png"
@@ -55,7 +55,7 @@ function HowToBuy() {
                   />
                 </div>
               </Grid>
-              <Grid item xs={6} className="text-left right__section">
+              <Grid item sm={6} xs={12} className="text-left right__section">
                 <h6>STEPS</h6>
                 <h1>
                   How we <span>buy</span>
@@ -99,8 +99,8 @@ function HowToBuy() {
           </div>
           <section className="what__buy__section">
             <div className="info__section">
-              <Grid container spacing={3} className="diamond__range">
-                <Grid item xs={5} className="left__section">
+              <Grid container spacing={0} className="diamond__range">
+                <Grid item sm={5} xs={12} className="left__section">
                   <div className="what__buy">
                     <h6>RULES</h6>
                     <h1>
@@ -121,7 +121,7 @@ function HowToBuy() {
                     </button>
                   </div>
                 </Grid>
-                <Grid item xs={7} className="right__section">
+                <Grid item sm={7} xs={12} className="right__section">
                   <div className="first__row__block">
                     <div className="carat__weight table__block">
                       <h6>CARAT WEIGHT</h6>
@@ -171,7 +171,7 @@ function HowToBuy() {
                       </table>
                     </div>
                   </div>
-                  <div className="clarity__block table__block mb-0">
+                  <div className="clarity__block table__block">
                     <h6>GIA CLARITY SCALE</h6>
                     <div className="color__chart">
                       <table>
@@ -200,7 +200,7 @@ function HowToBuy() {
               Key <span>USPs</span>
             </h1>
             <Grid container spacing={10} className="dse__features">
-              <Grid item xs={6} className="text-center left__section">
+              <Grid item sm={6} xs={12} className="text-center left__section">
                 <div className="top__background"></div>
                 <div className="feature__card">
                   <div className="image__section">
@@ -219,7 +219,7 @@ function HowToBuy() {
                   </div>
                 </div>
               </Grid>
-              <Grid item xs={6} className="text-center right__section">
+              <Grid item sm={6} xs={12} className="text-center right__section">
                 <div className="top__background"></div>
                 <div className="feature__card">
                   <div className="image__section">
@@ -238,7 +238,7 @@ function HowToBuy() {
                   </div>
                 </div>
               </Grid>
-              <Grid item xs={6} className="text-center left__section">
+              <Grid item sm={6} xs={12} className="text-center left__section">
                 <div className="top__background"></div>
                 <div className="feature__card">
                   <div className="image__section">
@@ -258,7 +258,7 @@ function HowToBuy() {
                   </div>
                 </div>
               </Grid>
-              <Grid item xs={6} className="text-center right__section">
+              <Grid item sm={6} xs={12} className="text-center right__section">
                 <div className="top__background"></div>
                 <div className="feature__card">
                   <div className="image__section">

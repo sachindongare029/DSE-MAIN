@@ -29,8 +29,9 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  line-height: 1.7;
+  font-family: "Inter", sans-serif !important;
+  line-height: 1.7 !important;
+  background-color: #fff !important;
 }
 ::selection {
   color: #fff;

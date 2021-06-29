@@ -1,0 +1,20 @@
+.drawer__dse {
+  .dse__drawer__header {
+    padding: 0;
+    .company-logo {
+      width: 100px;
+    }
+  }
+  .dse__left__dock {
+    .drawer__menu {
+      a {
+        display: flex;
+        align-items: center;
+        color: #243e63;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

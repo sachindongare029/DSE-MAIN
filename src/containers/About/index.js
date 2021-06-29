@@ -93,7 +93,7 @@ export default function About() {
               </div>
             </div>
             <Grid container spacing={0} className="dse__notes">
-              <Grid item xs={12}>
+              <Grid item sm={12} xs={12}>
                 <h3>NOTE:</h3>
                 <div className="note__conatainer">
                   <div className="first__note">
@@ -118,8 +118,8 @@ export default function About() {
           </div>
         </div>
         <div className="about__info">
-          <Grid container spacing={8}>
-            <Grid item xs={4} className="left__section text-center">
+          <Grid container spacing={0}>
+            <Grid item sm={4} xs={12} className="left__section text-center">
               <img
                 src="/Images/phone-and-coin.jpg"
                 data-aos={"fade-right"}
@@ -127,7 +127,7 @@ export default function About() {
                 alt="mobile"
               />
             </Grid>
-            <Grid item xs={8} className="right__section">
+            <Grid item sm={8} xs={12} className="right__section">
               <div className="heading__section">
                 <h1 className="text-left">
                   Diamond <span>Commodity</span>
@@ -171,8 +171,8 @@ export default function About() {
           </Grid>
         </div>
         <div className="dse__founder">
-          <Grid container spacing={10}>
-            <Grid item xs={7} className="founder__intro">
+          <Grid container spacing={0}>
+            <Grid item sm={7} xs={12} className="founder__intro">
               <h1 className="text-left">
                 Our <span>Founder</span>
               </h1>
@@ -189,7 +189,7 @@ export default function About() {
                 to manage over $500 million for Tudor and Millennium.
               </p>
             </Grid>
-            <Grid item xs={5} className="founder__image">
+            <Grid item sm={5} xs={12} className="founder__image">
               <img
                 src="/Images/founder.jpg"
                 data-aos={"fade-left"}

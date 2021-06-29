@@ -37,7 +37,7 @@ function Home() {
         <div className="middle__section">
           <div className="dse__overview__section">
             <Grid container spacing={0}>
-              <Grid item xs={8} className="middle__left">
+              <Grid item sm={8} xs={12} className="middle__left">
                 <h1>Exchange Overview</h1>
                 <p>
                   The Diamond Standard Exchange is where all diamonds are
@@ -63,7 +63,8 @@ function Home() {
               </Grid>
               <Grid
                 item
-                xs={4}
+                sm={4}
+                xs={12}
                 className="d-flex align-items-center justify-content-center"
               >
                 <img
@@ -87,7 +88,7 @@ function Home() {
                 discovery process.
               </p>
               <Grid container spacing={3} className="steps__cards">
-                <Grid item xs={4} className="step first__step">
+                <Grid item sm={4} xs={12} className="step first__step">
                   <div className="step__card">
                     <div className="step__count">
                       <BackupIcon />
@@ -98,7 +99,7 @@ function Home() {
                     </div>
                   </div>
                 </Grid>
-                <Grid item xs={4} className="step second__step">
+                <Grid item sm={4} xs={12} className="step second__step">
                   <div className="step__card">
                     <div className="step__count">
                       <ShoppingBasketIcon />
@@ -109,7 +110,7 @@ function Home() {
                     </div>
                   </div>
                 </Grid>
-                <Grid item xs={4} className="step third__step">
+                <Grid item sm={4} xs={12} className="step third__step">
                   <div className="step__card">
                     <div className="step__count">
                       <DirectionsBikeIcon />
@@ -123,7 +124,7 @@ function Home() {
                 <h5>
                   Our computer only selects the diamonds with the best prices.
                 </h5>
-                <Grid item xs={4} className="step first__step">
+                <Grid item sm={4} xs={12} className="step first__step">
                   <div className="step__card">
                     <div className="step__count">
                       <AttachMoneyIcon />
@@ -134,7 +135,7 @@ function Home() {
                     </div>
                   </div>
                 </Grid>
-                <Grid item xs={4} className="step second__step">
+                <Grid item sm={4} xs={12} className="step second__step">
                   <div className="step__card">
                     <div className="step__count">
                       <img src="/icons/negotiation.png" alt="negotiation" />
@@ -145,7 +146,7 @@ function Home() {
                     </div>
                   </div>
                 </Grid>
-                <Grid item xs={4} className="step third__step">
+                <Grid item sm={4} xs={12} className="step third__step">
                   <div className="step__card">
                     <div className="step__count">
                       <img src="/icons/return.png" alt="return" />
