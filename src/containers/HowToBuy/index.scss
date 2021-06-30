@@ -8,7 +8,8 @@ $primaryColor: #7250ba;
         border-bottom: 1px solid #7c8ba1;
         padding-bottom: 4rem;
         @media (max-width: 767px) {
-          // margin: 0 1rem 4rem;
+          margin: 0 1rem;
+          padding-bottom: 4rem;
         }
         .left__section {
           position: relative;
@@ -32,14 +33,17 @@ $primaryColor: #7250ba;
               filter: drop-shadow(rgba(0, 0, 0, 0.6) -3px 29px 11px);
               clip-path: inset(0 0px -50px -28px);
               @media (max-width: 767px) {
-                top: 160px;
+                top: 100px;
                 right: 0;
-                width: 140px;
+                width: 90px;
               }
             }
           }
         }
         .right__section {
+          @media (max-width: 767px) {
+            padding-top: 2rem;
+          }
           h1,
           h6 {
             text-align: left;
@@ -66,6 +70,10 @@ $primaryColor: #7250ba;
                   height: 100%;
                   font-size: 38px;
                   font-weight: 700;
+                  @media (max-width: 767px) {
+                    width: 20%;
+                    font-size: 30px;
+                  }
                 }
                 .step {
                   width: 90%;
@@ -74,16 +82,16 @@ $primaryColor: #7250ba;
                   color: #718096;
                   font-weight: 500;
                   font-family: "Inter medium";
-                  h3 {
-                    color: #243e63;
-                    font-size: 20px;
-                    font-weight: 600;
-                    letter-spacing: 0.05rem;
+                  @media (max-width: 767px) {
+                    padding: 0;
                   }
                   span {
                     display: inline-block;
                     width: 60%;
                     line-height: 1.5rem;
+                    @media (max-width: 767px) {
+                      width: 100%;
+                    }
                   }
                 }
               }
@@ -95,14 +103,14 @@ $primaryColor: #7250ba;
         padding: 4rem 0;
         border-bottom: 1px solid #7c8ba1;
         @media (max-width: 767px) {
-          padding: 0;
-          // margin: 0 1rem;
+          border-bottom: 0;
+          padding: 4rem 0;
         }
         .info__section {
           .left__section {
             .what__buy {
               @media (max-width: 767px) {
-                padding-bottom: 2rem;
+                padding: 0 1rem 4rem;
               }
               h1,
               h6 {
@@ -136,6 +144,10 @@ $primaryColor: #7250ba;
                   font-family: "Inter Thin";
                   display: block;
                 }
+                @media (max-width: 767px) {
+                  width: 75%;
+                  padding: 8px 25px;
+                }
               }
               button:hover {
                 background-color: #4d367b;
@@ -148,20 +160,38 @@ $primaryColor: #7250ba;
               .first__row__block {
                 display: flex;
                 justify-content: space-around;
+                @media (max-width: 767px) {
+                  padding: 0 1rem;
+                }
+              }
+              .carat__weight {
+                @media (max-width: 767px) {
+                  padding: 0 !important;
+                }
               }
               .table__block {
                 margin-bottom: 20px;
                 color: #243e63;
+                @media (max-width: 767px) {
+                  padding: 0 1rem;
+                }
                 h6 {
                   color: #243e63;
                   font-size: 14px;
                   font-weight: 700;
                   margin-bottom: 0.5rem;
                   letter-spacing: 0.05em;
+                  @media (max-width: 767px) {
+                    font-size: 12px;
+                  }
                 }
                 table {
                   width: auto;
                   margin: 0 auto;
+                  @media (max-width: 767px) {
+                    max-width: 100%;
+                    width: 100%;
+                  }
                   td {
                     color: #718096;
                     border: 1px solid #7b7b7b;
@@ -171,17 +201,16 @@ $primaryColor: #7250ba;
                     font-size: 12px;
                     height: 50px;
                     @media (max-width: 767px) {
-                      min-width: 30px;
-                      padding: 8px;
+                      min-width: 20px;
+                      height: 40px;
+                      padding: 2px;
+                      font-size: 8px;
                     }
                   }
                 }
               }
               .table__block:last-child {
                 margin-bottom: 0;
-                @media (max-width: 767px) {
-                  margin-bottom: 20px;
-                }
               }
             }
           }
@@ -189,9 +218,29 @@ $primaryColor: #7250ba;
       }
       .dse__specialities {
         padding: 4rem 6rem;
+        @media (max-width: 767px) {
+          margin: 0 1rem;
+          padding: 4rem 0;
+          border-top: 1px solid #7c8ba1;
+        }
         border-bottom: 1px solid #7c8ba1;
         .dse__features {
           padding: 20px 0;
+          @media (max-width: 767px) {
+            padding-bottom: 0;
+          }
+          .card__container {
+            padding: 2rem;
+            height: 100%;
+            @media (max-width: 767px) {
+              padding: 0 0 2rem 0;
+            }
+          }
+          .last__card__container {
+            @media (max-width: 767px) {
+              padding-bottom: 0;
+            }
+          }
           .top__background {
             border-top-left-radius: 0.5rem;
             border-top-right-radius: 0.5rem;
@@ -226,6 +275,9 @@ $primaryColor: #7250ba;
             .info__section {
               width: 70%;
               margin: 0 auto;
+              @media (max-width: 767px) {
+                width: 100%;
+              }
               p {
                 font-size: 16px;
                 color: #718096;
@@ -233,6 +285,10 @@ $primaryColor: #7250ba;
                 font-weight: 500;
                 line-height: 1.6rem;
                 margin: 2rem 0;
+                @media (max-width: 767px) {
+                  font-size: 14px;
+                  padding: 10px;
+                }
               }
             }
           }
@@ -241,6 +297,9 @@ $primaryColor: #7250ba;
       .dse__features__chart {
         padding: 4rem 0;
         border-bottom: 1px solid #7c8ba1;
+        @media (max-width: 767px) {
+          margin: 0 1rem;
+        }
         h6 {
           text-align: center;
           color: $primaryColor;
@@ -266,23 +325,30 @@ $primaryColor: #7250ba;
           font-size: 18px;
           color: #7c8ba1;
           font-weight: 500;
+          @media (max-width: 767px) {
+            font-size: 14px;
+            width: 100%;
+          }
         }
         .dse__processes {
+          @media (max-width: 767px) {
+            width: 100%;
+          }
           .process__accordion__item {
             border-radius: 8px;
             margin-top: 1.25rem;
             padding: 0;
-            // box-shadow: none;
-            // border: 1px solid #7c8ba1;
             .accordion__heading {
-              // padding: 0;
               min-height: 35px;
               h6 {
-                color: #1a202c;
+                color: #243e63;
                 font-weight: 600;
                 font-size: 16px;
                 margin: 0;
                 letter-spacing: 0.04em;
+                @media (max-width: 767px) {
+                  font-size: 14px;
+                }
               }
             }
             .process__detail {
@@ -310,6 +376,10 @@ $primaryColor: #7250ba;
                 left: 0;
                 top: 14px;
                 transform: translateY(-50%);
+                @media (max-width: 767px) {
+                  width: 12px;
+                  height: 12px;
+                }
               }
             }
           }

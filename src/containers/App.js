@@ -23,6 +23,7 @@ class App extends React.Component {
 
     AOS.init({
       duration: 2000,
+      disable: "mobile",
     });
     AOS.refresh();
   }

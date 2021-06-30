@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.enteringScreen,
     }),
     marginLeft: 0,
-    padding: "15px",
+    // padding: "15px",
   },
 }));
 

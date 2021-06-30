@@ -1,16 +1,22 @@
 $primaryColor: #7250ba;
 .dse__home {
   @media (max-width: 767px) {
-    // padding: 0 1rem;
+    padding: 0 1rem;
   }
   .home__page__container {
     .middle__section {
       padding: 3rem 0 4rem 0;
       background-color: white;
+      @media (max-width: 767px) {
+        padding: 4rem 0;
+      }
       p {
         text-align: justify;
         margin-bottom: 20px;
         color: #364361;
+        @media (max-width: 767px) {
+          font-size: 14px;
+        }
       }
       .dse__overview__section {
         border-bottom: 1px solid #7c8ba1;
@@ -23,6 +29,9 @@ $primaryColor: #7250ba;
         }
         img {
           max-width: 100%;
+          @media (max-width: 767px) {
+            margin-top: 40px;
+          }
         }
       }
       .dse__features {
@@ -30,23 +39,16 @@ $primaryColor: #7250ba;
         .feature__container {
           width: 70%;
           padding: 4rem 0;
-          h5,
-          h2 {
+          @media (max-width: 767px) {
+            width: 100%;
+            padding: 4rem 0;
+          }
+          h5 {
             font-weight: 700;
             text-align: center;
             color: $primaryColor;
             letter-spacing: 0.1em;
             font-size: 1.1rem;
-          }
-          h2 {
-            font-family: "Inter Boldest";
-            letter-spacing: 0.025em;
-            color: #243e63;
-            font-size: 44px;
-            margin: 20px 0;
-            span {
-              color: $primaryColor;
-            }
           }
           p {
             font-family: "Inter Medium";
@@ -54,6 +56,10 @@ $primaryColor: #7250ba;
             margin: 0 auto;
             font-size: 18px;
             color: #7c8ba1;
+            @media (max-width: 767px) {
+              width: 100%;
+              font-size: 16px;
+            }
           }
           .steps__cards {
             h5 {
@@ -63,6 +69,9 @@ $primaryColor: #7250ba;
               margin: 30px auto;
               letter-spacing: 0.03em;
               padding: 0 30px;
+              @media (max-width: 767px) {
+                padding: 0;
+              }
             }
             .step {
               .step__card {
@@ -95,12 +104,18 @@ $primaryColor: #7250ba;
                     font-size: 1.3rem;
                     line-height: 1;
                     color: #243e63;
+                    @media (max-width: 767px) {
+                      font-size: 1rem;
+                    }
                   }
                   p {
                     width: 100%;
                     margin: 10px 0 0 0;
                     font-size: 16px;
                     color: #7c8ba1;
+                    @media (max-width: 767px) {
+                      font-size: 16px;
+                    }
                   }
                 }
               }
@@ -109,6 +124,11 @@ $primaryColor: #7250ba;
                 border: 1px solid #e2e2e2;
                 border-radius: 20px;
                 box-shadow: 6px 6px 5px 0px rgba(125, 125, 125, 0.75);
+                @media (max-width: 767px) {
+                  box-shadow: none;
+                  border: none;
+                  transition: none;
+                }
               }
             }
           }
@@ -116,6 +136,9 @@ $primaryColor: #7250ba;
             width: 70%;
             margin: 20px auto 0;
             text-align: center;
+            @media (max-width: 767px) {
+              width: 100%;
+            }
             h5 {
               color: #243e63;
               text-align: center;

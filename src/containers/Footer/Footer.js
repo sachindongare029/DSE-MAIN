@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: 0,
       borderRight: 0,
       borderLeft: 0,
-      padding: "0 30px",
+      padding: "15px 30px",
     },
   },
   container: {
@@ -28,7 +28,7 @@ export default function Footer() {
     <footer>
       <div className={`${classes.root}`}>
         <Grid container className="footer__container" spacing={0}>
-          <Grid item xs={4} className="footer__left__section">
+          <Grid item sm={4} xs={12} className="footer__left__section">
             <Link to="/#" smooth>
               <img
                 className="company__logo"
@@ -37,8 +37,8 @@ export default function Footer() {
               />
             </Link>
           </Grid>
-          <Grid item xs={8}>
-            <Grid container spacing={3}>
+          <Grid item sm={8} xs={12} >
+            <Grid container spacing={0} className="links__container">
               <Grid item xs={6}>
                 <ul className="p-0 m-0">
                   {/* <li>

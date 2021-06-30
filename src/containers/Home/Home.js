@@ -78,16 +78,16 @@ function Home() {
           </div>
           <div className="dse__features">
             <div className="container feature__container">
-              <h5>FEATURES</h5>
-              <h2>
+              <h6>FEATURES</h6>
+              <h1>
                 Simple System & Prompt <span>Payments</span>
-              </h2>
+              </h1>
               <p className="text-center mb-5">
                 We buy large volumes of graded and ungraded natural diamonds
                 from established global vendors using an automated price
                 discovery process.
               </p>
-              <Grid container spacing={3} className="steps__cards">
+              <Grid container spacing={0} className="steps__cards">
                 <Grid item sm={4} xs={12} className="step first__step">
                   <div className="step__card">
                     <div className="step__count">
