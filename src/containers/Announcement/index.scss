@@ -35,10 +35,16 @@ $primaryColor: #7250ba;
         font-size: 34px;
         .date__label {
           font-family: "Benne Regular";
+          @media (max-width: 767px) {
+            font-size: 24px;
+          }
         }
         .date__value {
           font-family: "Tangerine Bold";
           font-weight: 700;
+          @media (max-width: 767px) {
+            font-size: 26px;
+          }
         }
       }
     }
@@ -53,9 +59,15 @@ $primaryColor: #7250ba;
         .main__text {
           text-transform: uppercase;
           font-weight: 700;
+          @media (max-width: 767px) {
+            font-size: 14px;
+          }
         }
         .sub__text {
           display: block;
+          @media (max-width: 767px) {
+            font-size: 12px;
+          }
         }
       }
     }
