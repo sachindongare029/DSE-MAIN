@@ -6,7 +6,7 @@ $primaryColor: #7250ba;
       background-color: #fff;
       .how__buy__overview {
         border-bottom: 1px solid #7c8ba1;
-        padding-bottom: 4rem;
+        padding: 4rem 0;
         @media (max-width: 767px) {
           margin: 0 1rem;
           padding-bottom: 4rem;
@@ -19,7 +19,6 @@ $primaryColor: #7250ba;
             height: 100%;
             padding-right: 20px;
             @media (max-width: 767px) {
-              padding-right: 0px;
               padding-bottom: 1rem;
             }
             .world__map {
@@ -27,15 +26,15 @@ $primaryColor: #7250ba;
             }
             .loupe__img {
               position: absolute;
-              top: 320px;
+              top: 300px;
               right: 20px;
               width: 160px;
               filter: drop-shadow(rgba(0, 0, 0, 0.6) -3px 29px 11px);
               clip-path: inset(0 0px -50px -28px);
               @media (max-width: 767px) {
-                top: 100px;
+                top: 96px;
                 right: 0;
-                width: 90px;
+                width: 100px;
               }
             }
           }

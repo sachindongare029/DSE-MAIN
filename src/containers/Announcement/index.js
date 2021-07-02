@@ -81,8 +81,8 @@ export default function Announcement({ show, handleCloseAnn }) {
           <Grid item xs={12} className="text-center">
             {renderAnnouncement()}
             <div className="actions__block">
-              <Grid container spacing={0}>
-                <Grid item xs={6}>
+              <Grid container spacing={2}>
+                <Grid item sm={6} xs={12}>
                   <a
                     href="https://sell.thedse.co/#/register"
                     className="btn register--btn"
@@ -93,7 +93,7 @@ export default function Announcement({ show, handleCloseAnn }) {
                     <span className="sub__text">to participate</span>
                   </a>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item sm={6} xs={12}>
                   <a
                     href="https://sell.thedse.co/#/login"
                     className="btn login--btn"

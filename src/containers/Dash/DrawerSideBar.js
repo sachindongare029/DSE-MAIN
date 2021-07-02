@@ -81,11 +81,10 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: -drawerWidth,
   },
   contentShift: {
-    transition: theme.transitions.create("margin", {
-      easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-    marginLeft: 0,
+    // transition: theme.transitions.create("margin", {
+    //   easing: theme.transitions.easing.easeOut,
+    //   duration: theme.transitions.duration.enteringScreen,
+    // }),
     // padding: "15px",
   },
 }));
@@ -149,50 +148,50 @@ function DrawerSideBar() {
             </IconButton>
           </div>
           <List className="drawer__menu">
-            <ListItem button>
-              <HashLink
-                to={`/#how-we-buy-diamonds`}
-                smooth
-                className="menu__item"
-              >
+            <HashLink
+              to={`/#how-we-buy-diamonds`}
+              smooth
+              className="menu__item"
+            >
+              <ListItem button>
                 <ListItemIcon>
                   <HelpOutlineIcon />
                 </ListItemIcon>
                 <ListItemText primary="How We Buy" />
-              </HashLink>
-            </ListItem>
-            <ListItem button>
-              <HashLink to={`/#dse-about`} smooth className="menu__item">
+              </ListItem>
+            </HashLink>
+            <HashLink to={`/#dse-about`} smooth className="menu__item">
+              <ListItem button>
                 <ListItemIcon>
                   <InfoIcon />
                 </ListItemIcon>
                 <ListItemText primary="About" />
-              </HashLink>
-            </ListItem>
-            <ListItem button>
-              <a
-                href="https://sell.thedse.co/#/register"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              </ListItem>
+            </HashLink>
+            <a
+              href="https://sell.thedse.co/#/register"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ListItem button>
                 <ListItemIcon>
                   <PersonAddIcon />
                 </ListItemIcon>
                 <ListItemText primary="Register" />
-              </a>
-            </ListItem>
-            <ListItem button>
-              <a
-                href="https://sell.thedse.co/#/login"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              </ListItem>
+            </a>
+            <a
+              href="https://sell.thedse.co/#/login"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ListItem button>
                 <ListItemIcon>
                   <ExitToAppIcon />
                 </ListItemIcon>
                 <ListItemText primary="Login" />
-              </a>
-            </ListItem>
+              </ListItem>
+            </a>
           </List>
         </Drawer>
         <main
